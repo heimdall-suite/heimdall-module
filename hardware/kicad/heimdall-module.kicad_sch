@@ -4600,16 +4600,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 45.72) (xy 158.75 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1d579ba-3bc7-4785-89d6-cfece203f019")
-	)
-	(wire
-		(pts
 			(xy 186.69 60.96) (xy 186.69 63.5)
 		)
 		(stroke
@@ -4800,16 +4790,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 50.8) (xy 149.86 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d23c3c08-b480-4a74-b431-20154f37594f")
-	)
-	(wire
-		(pts
 			(xy 45.72 90.17) (xy 48.26 90.17)
 		)
 		(stroke
@@ -4940,26 +4920,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 48.26) (xy 149.86 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0755dbe-6ab3-4d94-83cd-9f1b45cd6cb2")
-	)
-	(wire
-		(pts
-			(xy 158.75 45.72) (xy 158.75 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f900a447-6229-4e3b-96d2-a33fd9da3a63")
-	)
-	(wire
-		(pts
 			(xy 101.6 120.65) (xy 76.2 120.65)
 		)
 		(stroke
@@ -5058,7 +5018,7 @@
 		)
 		(uuid "4d329944-0f0a-42b7-b4dd-80769c7240c6")
 	)
-	(label "DATA"
+	(label "SIGNAL"
 		(at 99.06 83.82 90)
 		(effects
 			(font
@@ -5158,7 +5118,7 @@
 		)
 		(uuid "95f922f2-dd95-44a5-a196-9b4f9a723598")
 	)
-	(label "SIGNAL"
+	(label "DATA"
 		(at 105.41 83.82 90)
 		(effects
 			(font
@@ -7943,7 +7903,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "2.4GHz"
+		(property "Value" "ESP32-C3-WROOM-02-N4"
 			(at 132.08 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9744,9 +9704,9 @@
 		(unit 1)
 		(body_style 0)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "b9db8c86-ebec-4457-ac13-6043a6cc4062")
 		(property "Reference" "JP1"
@@ -10678,12 +10638,32 @@
 		(uuid "22a6ace3-40c2-4be9-9d5a-b53ae451da6e")
 	)
 	(no_connect
-		(at 149.86 66.04)
-		(uuid "7a729f01-8bff-4f04-8626-f3d4a6930515")
+		(at 149.86 48.26)
+		(uuid "44517dd7-9ff7-4abd-b69f-3a558d444b4c")
 	)
 	(no_connect
-		(at 149.86 63.5)
-		(uuid "8e860432-2a52-4645-9221-87c94d54fb97")
+		(at 149.86 50.8)
+		(uuid "98443820-a7ad-4af1-85ab-d5edac1321ab")
+	)
+	(label "SDA"
+		(at 149.86 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf3336e3-fdad-4ccc-9210-dffeba5f931c")
+	)
+	(label "SCL"
+		(at 149.86 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efd11a3a-7c2a-40c2-a072-0c92ed6c36e5")
 	)
 	(sheet_instances
 		(path "/"

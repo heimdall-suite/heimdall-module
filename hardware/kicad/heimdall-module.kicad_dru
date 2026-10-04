@@ -1,0 +1,6 @@
+(version 1)
+# Freerouting necks a few tracks down to ~0.19mm where they enter fine-pitch pads; the PCB
+# script widens every one it can back to 0.2mm without losing clearance, the rest stay.
+(rule "pin neck-down"
+  (condition "A.Type == 'track'")
+  (constraint track_width (min 0.18mm)))
