@@ -1,0 +1,10813 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "086f1e9c-4772-4202-855e-19c4ce2126c1")
+	(paper "User" 297.434 209.804)
+	(lib_symbols
+		(symbol "heimdall-m-easyedapro:1N5819_C437199"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:SMA_L4.4-W2.6-LS5.0-RD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/1N5819/435098.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "1N5819"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "KEXIN(科信)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C437199"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "KEXIN(科信)原型号 SS14,后续变更为 1N5819，丝印不变。 电压:40V 电流:1A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N5819_C437199_1_0"
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy -1.778 2.032) (xy -1.778 2.032) (xy -1.27 2.032) (xy -1.27 2.032) (xy -1.27 -2.032)
+						(xy -1.27 -2.032) (xy -0.762 -2.032) (xy -0.762 -2.032) (xy -0.762 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.524) (xy -1.27 0) (xy -1.27 0) (xy 1.27 -1.778) (xy 1.27 -1.778) (xy 1.27 1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "C"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:BG125-05-A-1-1-0440-N-D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:HDR-SMD_5P-P2.54-V-F-LS4.4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/BG125-05-A-1-1-0440-N-D/7074821.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "BG125-05-A-1-1-0440-N-D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "GCT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C6131707"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "1x5P 间距:2.54mm 立贴"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BG125-05-A-1-1-0440-N-D_1_0"
+				(rectangle
+					(start -1.27 7.62)
+					(end 3.81 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 6.35)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 5.08 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 -2.54 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -3.81 -5.08 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:Drawing-Symbol_A4"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Drawing-Symbol_A4_1_0"
+				(rectangle
+					(start 0 209.55)
+					(end 297.18 0)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 157.1498) (xy 2.54 157.1498)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 104.775) (xy 2.54 104.775)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 52.3748) (xy 2.54 52.3748)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 207.01)
+					(end 294.64 2.54)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 49.53 209.55) (xy 49.53 207.01)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 49.53 0) (xy 49.53 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 99.06 209.55) (xy 99.06 207.01)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 99.06 0) (xy 99.06 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 48.26) (xy 116.586 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 38.1) (xy 116.586 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 38.1) (xy 143.4338 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 33.02) (xy 116.586 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 33.02) (xy 143.4338 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 27.94) (xy 116.586 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 27.94) (xy 143.4338 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 22.86) (xy 116.586 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 22.86) (xy 143.4338 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 17.78) (xy 116.586 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 17.78) (xy 143.4338 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 12.7) (xy 116.586 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 12.7) (xy 143.4338 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 116.586 2.54) (xy 172.0088 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 48.26) (xy 116.586 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 48.26) (xy 143.4338 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 38.1) (xy 116.586 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 38.1) (xy 143.4338 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 38.1) (xy 143.4338 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 38.1) (xy 235.966 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 33.02) (xy 116.586 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 33.02) (xy 143.4338 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 33.02) (xy 143.4338 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 33.02) (xy 235.966 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 27.94) (xy 116.586 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 27.94) (xy 143.4338 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 27.94) (xy 143.4338 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 27.94) (xy 172.0088 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 22.86) (xy 116.586 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 22.86) (xy 143.4338 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 22.86) (xy 143.4338 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 22.86) (xy 172.0088 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 17.78) (xy 116.586 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 17.78) (xy 143.4338 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 17.78) (xy 143.4338 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 17.78) (xy 172.0088 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 12.7) (xy 143.4338 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 143.4338 12.7) (xy 172.0088 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 148.59 209.55) (xy 148.59 207.01)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 148.59 0) (xy 148.59 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 33.02) (xy 143.4338 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 33.02) (xy 172.0088 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 27.94) (xy 143.4338 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 27.94) (xy 172.0088 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 22.86) (xy 143.4338 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 22.86) (xy 172.0088 27.94)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 17.78) (xy 143.4338 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 17.78) (xy 172.0088 22.86)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 17.78) (xy 172.0088 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 17.78) (xy 294.64 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 12.7) (xy 116.586 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 12.7) (xy 172.0088 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 12.7) (xy 172.0088 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 12.7) (xy 195.5546 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 2.54) (xy 172.0088 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 172.0088 2.54) (xy 195.5546 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 17.78) (xy 172.0088 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 17.78) (xy 195.5546 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 12.7) (xy 172.0088 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 12.7) (xy 195.5546 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 12.7) (xy 195.5546 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 12.7) (xy 214.4268 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 2.54) (xy 195.5546 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 195.5546 2.54) (xy 214.4268 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 198.12 209.55) (xy 198.12 207.01)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 198.12 0) (xy 198.12 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 17.78) (xy 195.5546 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 17.78) (xy 214.4268 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 12.7) (xy 195.5546 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 12.7) (xy 214.4268 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 12.7) (xy 214.4268 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 12.7) (xy 294.64 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 2.54) (xy 214.4268 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 214.4268 2.54) (xy 294.64 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 48.26) (xy 143.4338 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 48.26) (xy 235.966 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 43.18) (xy 235.966 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 43.18) (xy 256.3622 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 38.1) (xy 143.4338 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 38.1) (xy 235.966 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 38.1) (xy 235.966 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 38.1) (xy 256.3622 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 33.02) (xy 235.966 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 235.966 33.02) (xy 256.3622 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 247.65 209.55) (xy 247.65 207.01)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 247.65 0) (xy 247.65 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 48.26) (xy 235.966 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 48.26) (xy 256.3622 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 43.18) (xy 235.966 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 43.18) (xy 256.3622 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 43.18) (xy 256.3622 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 43.18) (xy 294.64 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 38.1) (xy 235.966 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 38.1) (xy 256.3622 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 38.1) (xy 256.3622 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 38.1) (xy 294.64 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 33.02) (xy 256.3622 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 256.3622 33.02) (xy 294.64 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 48.26) (xy 256.3622 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 43.18) (xy 256.3622 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 43.18) (xy 294.64 48.26)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 38.1) (xy 256.3622 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 38.1) (xy 294.64 43.18)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 33.02) (xy 172.0088 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 33.02) (xy 294.64 38.1)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 17.78) (xy 214.4268 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 17.78) (xy 294.64 33.02)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 12.7) (xy 214.4268 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 12.7) (xy 294.64 17.78)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 294.64 2.54) (xy 294.64 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 297.18 157.1498) (xy 294.64 157.1498)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 297.18 104.775) (xy 294.64 104.775)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 297.18 52.3748) (xy 294.64 52.3748)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "A"
+					(at 1.27 183.3372 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "B"
+					(at 1.27 130.9624 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "C"
+					(at 1.27 78.5622 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "D"
+					(at 1.27 26.1874 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "1"
+					(at 24.765 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "1"
+					(at 24.765 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "2"
+					(at 74.295 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "2"
+					(at 74.295 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "Schematic"
+					(at 117.856 43.18 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Board"
+					(at 117.856 35.56 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Drawn"
+					(at 117.856 30.48 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Reviewed"
+					(at 117.856 25.4 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "3"
+					(at 123.825 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "3"
+					(at 123.825 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "4"
+					(at 173.355 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "4"
+					(at 173.355 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "Version"
+					(at 183.769 15.24 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "V1.0"
+					(at 183.769 7.62 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "Schematic1"
+					(at 189.7126 43.18 0)
+					(effects
+						(font
+							(size 3.1496 3.1496)
+						)
+					)
+				)
+				(text "Board1"
+					(at 189.7126 35.56 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "Size"
+					(at 204.978 15.24 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "A4"
+					(at 204.978 7.62 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "5"
+					(at 222.885 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "5"
+					(at 222.885 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "Atmosphere module"
+					(at 233.3244 25.4 0)
+					(effects
+						(font
+							(size 3.1496 3.1496)
+						)
+					)
+				)
+				(text "Create at"
+					(at 237.236 45.72 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Update at"
+					(at 237.236 40.64 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Page"
+					(at 237.236 35.56 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "Page  1  Total  1"
+					(at 254.5334 15.24 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "EasyEDA.com"
+					(at 254.5334 7.62 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+					)
+				)
+				(text "2026-08-29"
+					(at 257.6322 45.72 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "2026-08-29"
+					(at 257.6322 40.64 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "P1"
+					(at 257.6322 35.56 0)
+					(effects
+						(font
+							(size 2.3622 2.3622)
+						)
+						(justify left)
+					)
+				)
+				(text "6"
+					(at 272.415 208.28 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "6"
+					(at 272.415 1.27 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "A"
+					(at 295.91 183.3372 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "B"
+					(at 295.91 130.9624 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "C"
+					(at 295.91 78.5622 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+				(text "D"
+					(at 295.91 26.1874 0)
+					(effects
+						(font
+							(size 1.5748 1.5748)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:ERA6AEB221V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "220Ω"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:R0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "ERA6AEB221V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "PANASONIC(松下)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C445647"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ERA6AEB221V_1_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:ERA6AEB512V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "5.1kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:R0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB512V/479735.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "ERA6AEB512V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "PANASONIC(松下)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C473296"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "薄膜电阻 5.1kΩ ±0.1% 125mW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ERA6AEB512V_1_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:ERJ6ENF33R0V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "33Ω"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:R0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/ERJ6ENF33R0V/405249.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "ERJ6ENF33R0V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "PANASONIC(松下)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C413254"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "33Ω ±1% 125mW 厚膜电阻"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ERJ6ENF33R0V_1_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:ERJP06F1002V"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10kΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:R0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200515/C543414_D3FB4A44C151AC19BA141503575FC797.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "ERJP06F1002V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "PANASONIC(松下)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C543567"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "10kΩ ±1% 500mW 厚膜电阻"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ERJP06F1002V_1_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:ESP32-C3-WROOM-02-N4(4MB)"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "2.4GHz"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:BULETM-SMD_ESPRESSIF_ESP32-C3-WROOM-02-N4-4MB"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/ESP32-C3-WROOM-02-N4/3281215.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "ESP32-C3-WROOM-02-N4"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "ESPRESSIF(乐鑫)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C2934560"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "不带固件 2.4GHz Wi-Fi（802.11b/g/n）+ 蓝牙5模组"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ESP32-C3-WROOM-02-N4(4MB)_1_0"
+				(rectangle
+					(start -7.62 13.97)
+					(end 7.62 -13.97)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 8.89 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 6.35 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 3.81 0)
+					(length 2.54)
+					(name "IO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 1.27 0)
+					(length 2.54)
+					(name "IO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -1.27 0)
+					(length 2.54)
+					(name "IO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -3.81 0)
+					(length 2.54)
+					(name "IO7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -6.35 0)
+					(length 2.54)
+					(name "IO8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -8.89 0)
+					(length 2.54)
+					(name "IO9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -11.43 180)
+					(length 2.54)
+					(name "IO10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -8.89 180)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -6.35 180)
+					(length 2.54)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -3.81 180)
+					(length 2.54)
+					(name "IO18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "IO19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "IO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 3.81 180)
+					(length 2.54)
+					(name "IO2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 6.35 180)
+					(length 2.54)
+					(name "IO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 8.89 180)
+					(length 2.54)
+					(name "IO0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 10.16 11.43 180)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:GRM21B7U1A104JA01L"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "100nF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:C0805"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210128/C710980_BEF80F3D26E955AEFCD9E2DE324B32E9.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "GRM21B7U1A104JA01L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "muRata(村田)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C710980"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "100nF ±5% 10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GRM21B7U1A104JA01L_1_0"
+				(polyline
+					(pts
+						(xy -0.508 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -2.032) (xy -0.508 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 2.032) (xy 0.508 -2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0.508 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:Ground-GND"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.2446 1.2446)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Ground-GND_1_0"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -3.302) (xy 1.778 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.064) (xy 1.016 -4.064)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 -4.826) (xy 0.254 -4.826)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin power_in line
+					(at 0 0 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:MC33269DT-3.3G"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:TO-252-2_L6.6-W6.1-P4.57-LS9.9-BR-CW"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/MC33269DT-3.3G/232277.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "MC33269DT-3.3G"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "onsemi(安森美)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C232419"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "3.3V 800mA 20V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MC33269DT-3.3G_1_0"
+				(rectangle
+					(start -12.7 5.08)
+					(end 17.78 -5.08)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -11.43 3.81)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -15.24 2.54 0)
+					(length 2.54)
+					(name "GND/Adj"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:T491A106K010AT_C1508940"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "10uF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:CASE-A_3216"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/T491A106K010AT/1599380.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "T491A106K010AT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "KEMET(基美)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C1508940"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "10uF ±10% 10V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "T491A106K010AT_C1508940_1_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy -1.778 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 1.778) (xy -0.508 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.1176 -1.7526)
+					(mid 0.4064 0)
+					(end 1.143 1.778)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:T491A334K035AT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "330nF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:CAP-SMD_L3.2-W1.6"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/T491A334K035AT/213592.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "T491A334K035AT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "KEMET(基美)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C212667"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "330nF ±10% 35V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "T491A334K035AT_1_0"
+				(rectangle
+					(start -2.54 1.524)
+					(end -1.524 1.4986)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.762) (xy 2.54 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.032 2.032)
+					(end -2.0066 1.016)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 -1.016)
+					(mid -1.3208 -0.4064)
+					(end 0 -0.254)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.254)
+					(mid 1.3208 -0.4064)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 5.08 270)
+					(length 4.318)
+					(name "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -5.08 90)
+					(length 4.826)
+					(name "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "heimdall-m-easyedapro:TYPEC-214-ARP14H105"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "heimdall-m-easyedapro:USB-TYPE-C-TH_TYPEC-214-ARP14H105"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/TYPEC-214-ARP14H105/3412791.html"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "TYPEC-214-ARP14H105"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "XUNPU(讯普)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C2982529"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "Type-C 母 直插"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TYPEC-214-ARP14H105_1_0"
+				(rectangle
+					(start -8.89 11.43)
+					(end 8.89 -11.43)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 7.62 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 8.89 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 6.35 0)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 -1.27 0)
+					(length 2.54)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 -6.35 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A12"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -11.43 -8.89 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -7.62 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -5.08 180)
+					(length 2.54)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 -2.54 180)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 0 180)
+					(length 2.54)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 2.54 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 11.43 5.08 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B12"
+						(effects
+							(font
+								(size 0.8466 0.8466)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 45.72 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "407a879c-87e4-49f0-a392-c9a2341e632b")
+	)
+	(junction
+		(at 17.78 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45990048-7faa-45eb-8ef2-da51a1ccfd04")
+	)
+	(junction
+		(at 100.33 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45f6dc6d-b7ec-4a50-b8fb-9f6d0a00497f")
+	)
+	(junction
+		(at 76.2 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52d8660f-bd0d-4b2c-ada3-a49e8e269157")
+	)
+	(junction
+		(at 53.34 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "542b96e2-bd84-49ad-b72c-912f21b5382d")
+	)
+	(junction
+		(at 160.02 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbc7bf44-4fc1-44ec-80da-ea84f76025ff")
+	)
+	(junction
+		(at 17.78 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0b112cc-4ee9-48b6-b79e-03a9a82d2a45")
+	)
+	(junction
+		(at 165.1 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1fd9af4-efed-4f01-b345-813a503d2c66")
+	)
+	(junction
+		(at 43.18 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c424eafb-6b8a-4120-a165-41bd65ed0d67")
+	)
+	(junction
+		(at 127 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaaf4977-d18a-470f-b76b-405d9fa30586")
+	)
+	(junction
+		(at 72.39 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd37e25b-3199-404b-9b4f-0252914aa92e")
+	)
+	(wire
+		(pts
+			(xy 43.18 55.88) (xy 43.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0100a5cc-a2b3-4c7f-bb18-ccde5e24dff5")
+	)
+	(wire
+		(pts
+			(xy 105.41 76.2) (xy 105.41 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0436d2c1-0c8c-4a0a-957d-ac9355bcf6fc")
+	)
+	(wire
+		(pts
+			(xy 129.54 68.58) (xy 128.27 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b4935b-623e-4d08-b47c-5ae3a59a4d17")
+	)
+	(wire
+		(pts
+			(xy 149.86 55.88) (xy 157.48 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05c8b5f5-7db3-4fdb-96c5-084275d4cd2b")
+	)
+	(wire
+		(pts
+			(xy 187.96 50.8) (xy 180.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec8e8d3-2502-4894-83c7-dc806306cf91")
+	)
+	(wire
+		(pts
+			(xy 99.06 58.42) (xy 110.49 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f719d08-5b11-4467-9d83-6f3fda5b15fb")
+	)
+	(wire
+		(pts
+			(xy 113.03 55.88) (xy 113.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12db1f3e-ac15-44c7-86b1-825e1be7a53c")
+	)
+	(wire
+		(pts
+			(xy 105.41 60.96) (xy 113.03 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa76d9a-349d-4826-b446-ec10aba891c2")
+	)
+	(wire
+		(pts
+			(xy 72.39 87.63) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c189512-2ba3-47e1-bd53-9725141a881b")
+	)
+	(wire
+		(pts
+			(xy 53.34 26.67) (xy 53.34 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d63c213-9abe-46f2-acd7-71b805342ed9")
+	)
+	(wire
+		(pts
+			(xy 153.67 45.72) (xy 149.86 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248e7f65-2d26-4b3a-8ef3-7c995ef51597")
+	)
+	(wire
+		(pts
+			(xy 40.64 67.31) (xy 40.64 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24a38f04-aed0-437f-a968-2d6c692693b4")
+	)
+	(wire
+		(pts
+			(xy 160.02 45.72) (xy 162.56 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277f2978-ed20-41ec-beda-21f2b15ae44b")
+	)
+	(wire
+		(pts
+			(xy 115.57 58.42) (xy 115.57 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "290eaeb7-a4d7-404b-9781-860751a4f5e9")
+	)
+	(wire
+		(pts
+			(xy 99.06 76.2) (xy 99.06 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a3d5ffb-b701-40ae-9b83-89f80863a6f0")
+	)
+	(wire
+		(pts
+			(xy 100.33 50.8) (xy 129.54 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc44e4e-da51-4d07-89e8-db3685eb7e17")
+	)
+	(wire
+		(pts
+			(xy 48.26 107.95) (xy 45.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3080a692-e977-4a24-99e3-dd1c34b3975c")
+	)
+	(wire
+		(pts
+			(xy 17.78 120.65) (xy 17.78 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "324963c5-6ab8-423a-86e1-8ac1dcf139d1")
+	)
+	(wire
+		(pts
+			(xy 129.54 53.34) (xy 110.49 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34728b41-fb07-4011-91f0-414867a2ca72")
+	)
+	(wire
+		(pts
+			(xy 72.39 93.98) (xy 71.12 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3acef7e5-2145-411f-a635-7bf1445ff79a")
+	)
+	(wire
+		(pts
+			(xy 76.2 106.68) (xy 71.12 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9e0928-bd91-4aa0-8f0d-a52b2fceed5a")
+	)
+	(wire
+		(pts
+			(xy 72.39 93.98) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e28f796-7f7b-4af1-8ec5-53e5a86fa0f1")
+	)
+	(wire
+		(pts
+			(xy 17.78 139.7) (xy 17.78 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41af6832-ecce-4944-8e0e-a04c1c9886d8")
+	)
+	(wire
+		(pts
+			(xy 149.86 68.58) (xy 157.48 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43efd666-215e-4224-b72d-d6da4e3f00c4")
+	)
+	(wire
+		(pts
+			(xy 48.26 105.41) (xy 45.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d3a4d1-aca6-4151-b920-2b34e88697db")
+	)
+	(wire
+		(pts
+			(xy 204.47 63.5) (xy 196.85 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47824ffa-c3ff-4391-99aa-37cfe2addc0d")
+	)
+	(wire
+		(pts
+			(xy 186.69 60.96) (xy 149.86 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49ed2b4a-4876-48bd-824f-e09706a5659c")
+	)
+	(wire
+		(pts
+			(xy 40.64 55.88) (xy 40.64 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4afb6958-6e7c-4480-99db-6c0504bf0ab2")
+	)
+	(wire
+		(pts
+			(xy 93.98 50.8) (xy 100.33 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4daaddaf-52e8-4da9-bd39-ce040905de45")
+	)
+	(wire
+		(pts
+			(xy 161.29 66.04) (xy 149.86 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5586e35d-c2f7-4cb4-84e3-8f24d471b533")
+	)
+	(wire
+		(pts
+			(xy 163.83 63.5) (xy 149.86 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f3d513-652a-45a3-af38-624b3af86a32")
+	)
+	(wire
+		(pts
+			(xy 160.02 41.91) (xy 160.02 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5737a464-bdfe-4f2e-ad7d-89c71e774be5")
+	)
+	(wire
+		(pts
+			(xy 191.77 58.42) (xy 191.77 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "580023a0-8ad8-4300-a9a9-36755b131331")
+	)
+	(wire
+		(pts
+			(xy 127 41.91) (xy 127 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c4b6e11-6ba1-4baa-bea4-efbd3682930a")
+	)
+	(wire
+		(pts
+			(xy 48.26 55.88) (xy 43.18 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ccfbf4b-9b05-4e50-888c-fb21f2e3dd5c")
+	)
+	(wire
+		(pts
+			(xy 43.18 26.67) (xy 43.18 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f02ea7b-25c5-4716-a91c-42b5d490c423")
+	)
+	(wire
+		(pts
+			(xy 110.49 53.34) (xy 110.49 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60dd828d-d1b7-47f4-a1db-c4be292478ac")
+	)
+	(wire
+		(pts
+			(xy 129.54 58.42) (xy 115.57 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "669ba24b-9694-4efe-84e5-0ecf406f4862")
+	)
+	(wire
+		(pts
+			(xy 48.26 97.79) (xy 40.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af8bac6-05da-4957-a830-2d6ff7ce4635")
+	)
+	(wire
+		(pts
+			(xy 101.6 96.52) (xy 71.12 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70669202-d6f5-40cb-a296-114bc9c6bffc")
+	)
+	(wire
+		(pts
+			(xy 40.64 67.31) (xy 45.72 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74e2e7b7-a169-4ab6-b71b-07314327aa96")
+	)
+	(wire
+		(pts
+			(xy 127 48.26) (xy 129.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7638b705-c4cb-40a9-9ee9-53d5da59278f")
+	)
+	(wire
+		(pts
+			(xy 99.06 66.04) (xy 99.06 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7883d63f-09a2-4f73-bdba-6c67238e39e9")
+	)
+	(wire
+		(pts
+			(xy 180.34 45.72) (xy 172.72 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c551e0-f5af-4832-94c0-126506c73bf6")
+	)
+	(wire
+		(pts
+			(xy 209.55 55.88) (xy 201.93 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca36a32-cb25-4c59-89ba-de144aba0408")
+	)
+	(wire
+		(pts
+			(xy 48.26 100.33) (xy 40.64 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fce3c7d-fc8e-4492-8299-2f3de6dd8910")
+	)
+	(wire
+		(pts
+			(xy 17.78 88.9) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "846fc5b5-6edf-48fa-9801-92968839b466")
+	)
+	(wire
+		(pts
+			(xy 161.29 66.04) (xy 161.29 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88acd3a0-23dd-4ac3-9b12-abd6cda2ad47")
+	)
+	(wire
+		(pts
+			(xy 149.86 58.42) (xy 191.77 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88b7b5f7-6836-4d1b-9e8e-4d10c04bb6d1")
+	)
+	(wire
+		(pts
+			(xy 76.2 120.65) (xy 76.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ae371e-d8df-464e-af13-bd44e8f5ac04")
+	)
+	(wire
+		(pts
+			(xy 111.76 66.04) (xy 111.76 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f661c21-e9a2-43f9-b2d9-83b685dda171")
+	)
+	(wire
+		(pts
+			(xy 17.78 102.87) (xy 17.78 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9149347d-e7c8-4759-bc18-88c7fbd9b9e2")
+	)
+	(wire
+		(pts
+			(xy 40.64 92.71) (xy 48.26 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "976c711c-23ee-4fcf-bec7-a70fb9c2059e")
+	)
+	(wire
+		(pts
+			(xy 100.33 33.02) (xy 100.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97dfe592-0652-4c7c-82f3-c3c2343d1dd4")
+	)
+	(wire
+		(pts
+			(xy 48.26 95.25) (xy 39.37 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c431a20-4494-44b0-9a0b-ac2186c465c0")
+	)
+	(wire
+		(pts
+			(xy 160.02 45.72) (xy 158.75 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d579ba-3bc7-4785-89d6-cfece203f019")
+	)
+	(wire
+		(pts
+			(xy 186.69 60.96) (xy 186.69 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a62bd4db-7d03-4b8f-8f6a-cd31de231e71")
+	)
+	(wire
+		(pts
+			(xy 71.12 91.44) (xy 72.39 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a794876a-ee34-4c3f-b97c-15ce202aa936")
+	)
+	(wire
+		(pts
+			(xy 50.8 26.67) (xy 50.8 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e5de97-048a-4150-8188-e72a0cc95716")
+	)
+	(wire
+		(pts
+			(xy 101.6 120.65) (xy 101.6 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b05d8ba5-22d1-484e-8ef4-d45a8cf7c06c")
+	)
+	(wire
+		(pts
+			(xy 128.27 68.58) (xy 128.27 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2fb91c5-c895-4faa-8b31-2c2db78ad0f5")
+	)
+	(wire
+		(pts
+			(xy 163.83 63.5) (xy 163.83 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81a68ba-5f22-46a2-9952-5f5dd6640705")
+	)
+	(wire
+		(pts
+			(xy 114.3 48.26) (xy 127 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b98d7ae3-3569-4d3b-8e3d-488a0e75d388")
+	)
+	(wire
+		(pts
+			(xy 105.41 60.96) (xy 105.41 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb55c6b6-0962-4d7a-9c66-258e0068c031")
+	)
+	(wire
+		(pts
+			(xy 71.12 99.06) (xy 78.74 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2324bf-2f59-477b-965a-a4bcf26b5b8c")
+	)
+	(wire
+		(pts
+			(xy 71.12 104.14) (xy 81.28 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bccf947f-fd04-45dd-8aa9-3e3d9b538cf1")
+	)
+	(wire
+		(pts
+			(xy 111.76 76.2) (xy 111.76 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c019d4c6-5ce5-4a01-b588-9ad08e5e072c")
+	)
+	(wire
+		(pts
+			(xy 45.72 26.67) (xy 45.72 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1aa8f43-7916-414d-b289-064a5f0fb4f6")
+	)
+	(wire
+		(pts
+			(xy 58.42 55.88) (xy 62.23 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c553da9c-1353-4e9d-b503-60b54e66dd47")
+	)
+	(wire
+		(pts
+			(xy 17.78 120.65) (xy 17.78 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89f9f3e-2e68-452d-a449-b285b8aa4129")
+	)
+	(wire
+		(pts
+			(xy 111.76 63.5) (xy 115.57 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8c44f56-ac6c-4136-81eb-5161eee535e6")
+	)
+	(wire
+		(pts
+			(xy 71.12 101.6) (xy 78.74 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8e66f62-c7bb-464c-a746-1489049f4dc4")
+	)
+	(wire
+		(pts
+			(xy 129.54 60.96) (xy 121.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccbee0fe-1f03-4f94-b8b4-2bee2c29fef0")
+	)
+	(wire
+		(pts
+			(xy 153.67 44.45) (xy 153.67 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce1b7892-f781-4ff0-9c56-05f594988457")
+	)
+	(wire
+		(pts
+			(xy 40.64 63.5) (xy 53.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce954b28-bcf5-43f3-9488-040a9cb3d2c9")
+	)
+	(wire
+		(pts
+			(xy 165.1 54.61) (xy 165.1 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d05bc825-323e-4202-801d-b8c9626babb3")
+	)
+	(wire
+		(pts
+			(xy 165.1 50.8) (xy 149.86 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d23c3c08-b480-4a74-b431-20154f37594f")
+	)
+	(wire
+		(pts
+			(xy 45.72 90.17) (xy 48.26 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d313d782-c25e-46e6-923f-667cbf9f647e")
+	)
+	(wire
+		(pts
+			(xy 48.26 19.05) (xy 48.26 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3dbd926-3bef-4f5a-97f6-7ef3aceaae3b")
+	)
+	(wire
+		(pts
+			(xy 40.64 55.88) (xy 43.18 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8598fb7-c534-40c7-9391-da70ebac4318")
+	)
+	(wire
+		(pts
+			(xy 40.64 88.9) (xy 40.64 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9d1f521-419b-407c-8f44-20fb4f88acc5")
+	)
+	(wire
+		(pts
+			(xy 48.26 102.87) (xy 17.78 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da62060e-3019-4b6b-8d8a-b9f32ea472e7")
+	)
+	(wire
+		(pts
+			(xy 53.34 63.5) (xy 53.34 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd99473-b060-4492-9a43-eda6ea02a4f4")
+	)
+	(wire
+		(pts
+			(xy 45.72 87.63) (xy 45.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd78e46a-bbf9-4bc6-82ff-5e521de1c641")
+	)
+	(wire
+		(pts
+			(xy 76.2 120.65) (xy 17.78 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1cdd18d-ffff-4773-8c30-ea062a04e5ad")
+	)
+	(wire
+		(pts
+			(xy 45.72 105.41) (xy 45.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2bc9b8a-4dd1-4bce-b25e-48f61f9e41b6")
+	)
+	(wire
+		(pts
+			(xy 45.72 110.49) (xy 45.72 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e51d8ca4-5f97-4d93-b19f-554dba96ade9")
+	)
+	(wire
+		(pts
+			(xy 129.54 55.88) (xy 113.03 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e634be03-ef3d-44fc-8760-4e0b53faf702")
+	)
+	(wire
+		(pts
+			(xy 58.42 63.5) (xy 53.34 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb191534-821a-4ea7-a756-1839c9658ae8")
+	)
+	(wire
+		(pts
+			(xy 170.18 50.8) (xy 165.1 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efc8e548-82c4-4f2e-9221-1202bd08ad54")
+	)
+	(wire
+		(pts
+			(xy 158.75 48.26) (xy 149.86 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0755dbe-6ab3-4d94-83cd-9f1b45cd6cb2")
+	)
+	(wire
+		(pts
+			(xy 158.75 45.72) (xy 158.75 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f900a447-6229-4e3b-96d2-a33fd9da3a63")
+	)
+	(wire
+		(pts
+			(xy 101.6 120.65) (xy 76.2 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7c2b86-4b67-418c-a3dc-4d06dfffdfb9")
+	)
+	(label "USB-D+"
+		(at 204.47 55.88 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "0bc8f11c-015c-442b-bcf6-ea15423c21de")
+	)
+	(label "VCC"
+		(at 114.3 48.26 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "2909584f-c05b-459c-adb6-6b5ba52bd70e")
+	)
+	(label "SIGNAL"
+		(at 43.18 26.67 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "3146678c-49fa-4917-bfcf-b2661df1dfb7")
+	)
+	(label "VBAT"
+		(at 17.78 139.7 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "31e05357-a0e3-44e5-8150-17be81f4b819")
+	)
+	(label "VCC"
+		(at 53.34 67.31 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "36cd6916-eb99-4dfa-b33a-9310d86726dc")
+	)
+	(label "VBUS"
+		(at 44.45 120.65 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d621dc5-6553-4ba5-9b4d-8abac398d083")
+	)
+	(label "SCL"
+		(at 165.1 54.61 180)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify right top)
+		)
+		(uuid "3f188515-7603-4b72-96ff-3b93a7d19e3f")
+	)
+	(label "IO10"
+		(at 152.4 68.58 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bbf4cd8-9d10-4491-b561-c4e34e502716")
+	)
+	(label "IO3"
+		(at 152.4 55.88 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d329944-0f0a-42b7-b4dd-80769c7240c6")
+	)
+	(label "DATA"
+		(at 99.06 83.82 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "53979964-0564-45a0-bfd7-ff7b4966ccfe")
+	)
+	(label "VBAT"
+		(at 48.26 26.67 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "5fd7ff15-4a2c-445c-a32c-1b9953acf98e")
+	)
+	(label "USB-D-"
+		(at 73.66 99.06 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "60bd6a05-cc52-4388-9275-570d264b8a54")
+	)
+	(label "USB-D-"
+		(at 40.64 100.33 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "673e2149-22d0-47d1-8d4f-ec614dd80d04")
+	)
+	(label "TXD"
+		(at 163.83 73.66 180)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify right top)
+		)
+		(uuid "715c7702-82b5-43d1-b920-6991d7ab61a5")
+	)
+	(label "VCC"
+		(at 100.33 33.02 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a0a7267-c15e-48a0-9a5e-74c95adb5fad")
+	)
+	(label "SDA"
+		(at 160.02 41.91 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d6fd97a-fbec-465c-85a6-8b10c3186470")
+	)
+	(label "VCC"
+		(at 175.26 45.72 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "808d53c5-40b8-4e41-b353-bef9204fb303")
+	)
+	(label "DATA"
+		(at 53.34 26.67 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "890c03a8-d13f-4886-9d23-36e8a5101f30")
+	)
+	(label "HB"
+		(at 45.72 26.67 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e4f0f0a-32e4-42b6-9e31-79f609b69eb7")
+	)
+	(label "USB-D-"
+		(at 199.39 63.5 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "95f922f2-dd95-44a5-a196-9b4f9a723598")
+	)
+	(label "SIGNAL"
+		(at 105.41 83.82 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "aab02dae-44fb-495a-a94c-5fa4734a0718")
+	)
+	(label "HB"
+		(at 111.76 83.82 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae332da1-4a80-4bcf-a86a-a6d7b67135cd")
+	)
+	(label "USB-D+"
+		(at 73.66 101.6 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc598e3c-0243-48de-82f7-e1f72616fb61")
+	)
+	(label "RXD"
+		(at 161.29 71.12 180)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify right top)
+		)
+		(uuid "cea019b1-52a4-43b3-94ff-a2055b1b3c8e")
+	)
+	(label "VCC"
+		(at 182.88 50.8 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "d277eb76-29af-4138-a247-3402fc96c072")
+	)
+	(label "USB-D+"
+		(at 40.64 97.79 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "eefd116e-55c9-47f1-bcd4-404afa277a23")
+	)
+	(label "IO7"
+		(at 121.92 60.96 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f34dd882-015d-454e-9adf-1a8af7ab6c35")
+	)
+	(label "GND"
+		(at 50.8 26.67 90)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5fb574c-5962-422f-a694-a7fff8ccdb54")
+	)
+	(label "VBAT"
+		(at 43.18 53.34 0)
+		(effects
+			(font
+				(size 1.2446 1.2446)
+			)
+			(justify left bottom)
+		)
+		(uuid "f63326fd-6081-48e0-bf17-fe257f697925")
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 127 31.75 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "005baa19-56ed-42a5-bf72-a4e67958eab5")
+		(property "Reference" "#PWR?"
+			(at 127 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 127 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 127 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e03d94a8-4ce9-4df4-8057-01ad6b0107e8")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:1N5819_C437199")
+		(at 17.78 128.27 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04682c9d-6c77-4e7c-8ea5-ccb0cac5cf2d")
+		(property "Reference" "D1"
+			(at 21.59 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 21.59 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:SMA_L4.4-W2.6-LS5.0-RD"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/1N5819/435098.html"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "1N5819"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEXIN(科信)"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C437199"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "KEXIN(科信)原型号 SS14,后续变更为 1N5819，丝印不变。 电压:40V 电流:1A"
+			(at 17.78 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bdcda706-6e61-41b3-85f9-ab033034cc99")
+		)
+		(pin "2"
+			(uuid "81eb5b77-0741-4a4e-b3d8-a27e53856790")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:GRM21B7U1A104JA01L")
+		(at 88.9 50.8 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04ff2fa1-19d1-407c-b041-e617c6257dd8")
+		(property "Reference" "C4"
+			(at 86.36 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "100nF"
+			(at 86.36 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:C0805"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210128/C710980_BEF80F3D26E955AEFCD9E2DE324B32E9.pdf"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "GRM21B7U1A104JA01L"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "muRata(村田)"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C710980"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "100nF ±5% 10V"
+			(at 88.9 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "577fc9ca-bef1-4f64-8f6e-72bd5333c85d")
+		)
+		(pin "2"
+			(uuid "14539453-3881-4b65-a4e5-1416d2ac75c3")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
+		(at 111.76 71.12 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "09aa00d9-ec06-48f1-b8e8-ba905bc6b5ae")
+		(property "Reference" "R7"
+			(at 114.3 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0414 1.0414)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 114.3 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERA6AEB221V"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C445647"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
+			(at 111.76 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0c993cab-fb39-4b6e-81e3-4c60a9085fa0")
+		)
+		(pin "1"
+			(uuid "6264b18e-3d14-4f44-9676-32b1c19276ec")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 128.27 71.12 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "136b1269-0e43-4bed-aeaa-654819478691")
+		(property "Reference" "#PWR?"
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1208040f-7945-4b88-8f45-85035035f6c4")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERA6AEB512V")
+		(at 86.36 104.14 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "13705994-55a1-422a-ae83-f1f22143ba72")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "R1"
+			(at 83.82 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "5.1kΩ"
+			(at 83.82 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB512V/479735.html"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Type:Thin Film Resistor Resistance:5.1kΩ Tolerance:±0.1% Tolerance:±0.1% Power(Watts):125mW Voltage-Supply(Max):100V Temperature Coefficient:±25ppm/℃ Temperature Coefficient:±25ppm/℃ Operating Temperature:-55℃~+155℃ Operating Temperature:-55℃~+155℃"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer Part" "ERA6AEB512V"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier Part" "C473296"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part Name" "薄膜电阻 5.1kΩ ±0.1% 125mW"
+			(at 86.36 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "2"
+			(uuid "52a91ad8-0984-4ff8-898e-91a42171cf1b")
+		)
+		(pin "1"
+			(uuid "0972db9c-8350-4494-b3e1-02052e058b0d")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 45.72 67.31 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1574341a-e7ea-4f21-bad3-e91acef6083e")
+		(property "Reference" "#PWR?"
+			(at 45.72 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 45.72 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "243748c0-6e1e-4a89-8b0b-3b5a9f7aa221")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Drawing-Symbol_A4")
+		(at 0 209.55 0)
+		(unit 0)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2eab35ff-e1dc-43a0-84a2-56e7081952f3")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "?"
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 0 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "?")
+					(unit 0)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:T491A334K035AT")
+		(at 53.34 55.88 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "468ed2e7-7bf2-49fb-a538-453d7e0fe1b7")
+		(property "Reference" "C1"
+			(at 50.8 52.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "330nF"
+			(at 50.8 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:CAP-SMD_L3.2-W1.6"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/T491A334K035AT/213592.html"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "T491A334K035AT"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET(基美)"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C212667"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "330nF ±10% 35V"
+			(at 53.34 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8df0b362-a2f9-4b55-8c60-f293d72dab87")
+		)
+		(pin "2"
+			(uuid "d8d393f0-a13d-4c67-a583-3ddd34b57aa8")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:BG125-05-A-1-1-0440-N-D")
+		(at 48.26 15.24 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "642d2701-152f-4713-ba4e-23c42342d0a6")
+		(property "Reference" "H1"
+			(at 57.15 13.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "BG125-05-A-1-1-0440-N-D"
+			(at 57.15 16.51 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:HDR-SMD_5P-P2.54-V-F-LS4.4"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/BG125-05-A-1-1-0440-N-D/7074821.html"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BG125-05-A-1-1-0440-N-D"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "GCT"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C6131707"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "1x5P 间距:2.54mm 立贴"
+			(at 48.26 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "2d45b563-da2a-4026-b051-c2c68dcc33ce")
+		)
+		(pin "5"
+			(uuid "c92198b1-79e5-4754-9572-105ae88639d6")
+		)
+		(pin "1"
+			(uuid "f6d00e69-bbb6-4308-8ede-d47e947341ad")
+		)
+		(pin "3"
+			(uuid "7eb64ca7-717c-44ff-9844-635e0abd6302")
+		)
+		(pin "2"
+			(uuid "c2520bc8-58a4-48ef-8cb1-a28775eeea5c")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 91.44 104.14 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "71905a3e-68f8-42d9-9c5d-2e993cc06b2d")
+		(property "Reference" "#PWR?"
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.79 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3de9db21-81f6-4276-b59c-f542bef0a78a")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
+		(at 105.41 71.12 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "73aa92d4-9f7a-4902-ad78-0f3bf11aa113")
+		(property "Reference" "R6"
+			(at 107.95 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0414 1.0414)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 107.95 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERA6AEB221V"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C445647"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
+			(at 105.41 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e4d1ce5b-a225-4c49-b69f-6ccb76ec44e7")
+		)
+		(pin "1"
+			(uuid "e9b1a6ea-9f9c-4956-a346-ae4dd7d36a80")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 83.82 50.8 270)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "78090cc7-4668-4b5d-ad3e-a02354859c82")
+		(property "Reference" "#PWR?"
+			(at 83.82 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 83.82 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fe7bcfe-3422-437b-a654-089e72d5db16")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 29.21 95.25 270)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ccf050c-ac32-44b8-a72e-8b8612aea787")
+		(property "Reference" "#PWR?"
+			(at 29.21 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 29.21 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 29.21 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "259bf44f-1fce-485c-9915-4739d888ad67")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERJ6ENF33R0V")
+		(at 196.85 55.88 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ea17978-b1c0-47e1-bf1e-a9a80b4dbb4b")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "R3"
+			(at 194.31 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "33Ω"
+			(at 194.31 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERJ6ENF33R0V/405249.html"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Description" "Type:Thick Film Resistor Resistance:33Ω Tolerance:±1% Tolerance:±1% Power(Watts):125mW Voltage-Supply(Max):- Temperature Coefficient:±100ppm/℃ Temperature Coefficient:±100ppm/℃ Operating Temperature:-55℃~+155℃ Operating Temperature:-55℃~+155℃"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Manufacturer Part" "ERJ6ENF33R0V"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Supplier Part" "C413254"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "LCSC Part Name" "33Ω ±1% 125mW 厚膜电阻"
+			(at 196.85 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(pin "1"
+			(uuid "70a9a84f-fe2c-4b0c-8b8c-d9a4ff1b6b98")
+		)
+		(pin "2"
+			(uuid "17236a21-ffc5-4884-9c84-1218ac55ad21")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 50.8 26.67 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8af22d7f-b39e-4f95-b18b-f33980687fd4")
+		(property "Reference" "#PWR?"
+			(at 50.8 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 50.8 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3852a005-7494-4e02-9150-c565657c090e")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERJP06F1002V")
+		(at 175.26 50.8 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8d0178ac-f763-4b12-9ddb-6a412efa3db2")
+		(property "Reference" "R10"
+			(at 172.72 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 172.72 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200515/C543414_D3FB4A44C151AC19BA141503575FC797.pdf"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJP06F1002V"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C543567"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "10kΩ ±1% 500mW 厚膜电阻"
+			(at 175.26 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "13d793e4-a15d-40e8-a58d-51a041862e6a")
+		)
+		(pin "1"
+			(uuid "30090c12-0f85-462b-9aa2-d8d1a9ecf013")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 72.39 87.63 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f7d8694-05c6-4af7-9856-e5aef8da8499")
+		(property "Reference" "#PWR?"
+			(at 72.39 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 72.39 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8e0c327-dd8b-4db1-8480-e5f88d3fd667")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:MC33269DT-3.3G")
+		(at 25.4 63.5 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9960f26f-5e7e-4bc2-9b1d-19dcf2890e46")
+		(property "Reference" "U1"
+			(at 7.62 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0414 1.0414)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "MC33269DT-3.3G"
+			(at 7.62 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:TO-252-2_L6.6-W6.1-P4.57-LS9.9-BR-CW"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/MC33269DT-3.3G/232277.html"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "MC33269DT-3.3G"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "onsemi(安森美)"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C232419"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "3.3V 800mA 20V"
+			(at 25.4 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "792f27e7-18a4-4fbc-81e8-698c87ad0ace")
+		)
+		(pin "1"
+			(uuid "9eec86ad-7f20-4b6d-8f79-95cde511047a")
+		)
+		(pin "3"
+			(uuid "217cbebb-4fe3-41c2-ba56-0a91c85f1f9f")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 68.58 63.5 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9eb5a36d-297a-44e6-b13a-bcc87050376f")
+		(property "Reference" "#PWR?"
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 74.93 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64509240-c43a-43e9-b856-f1dc1ae65e45")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:T491A106K010AT_C1508940")
+		(at 63.5 63.5 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ef70c4a-1ca9-4ddb-a7f6-11cab1958476")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "C2"
+			(at 60.96 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "10uF"
+			(at 60.96 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:CASE-A_3216"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/T491A106K010AT/1599380.html"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Capacitance:10uF Tolerance:±10% Tolerance:±10% Voltage Rating:10V Current - Leakage:- Ripple Current:- Equivalent Series Resistance(ESR):3.8Ω Operating Temperature:-55℃~+125℃ Operating Temperature:-55℃~+125℃"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer Part" "T491A106K010AT"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "KEMET(基美)"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier Part" "C1508940"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part Name" "10uF ±10% 10V"
+			(at 63.5 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "0592a39c-71bc-4f55-9f44-401824d0f79d")
+		)
+		(pin "2"
+			(uuid "2cbd1cae-bf30-4d16-92c5-b179ea1f29ba")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERA6AEB512V")
+		(at 34.29 95.25 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9f96f494-9903-4f9f-a183-e32f8cd2900e")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "R2"
+			(at 31.75 93.98 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "5.1kΩ"
+			(at 31.75 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB512V/479735.html"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Type:Thin Film Resistor Resistance:5.1kΩ Tolerance:±0.1% Tolerance:±0.1% Power(Watts):125mW Voltage-Supply(Max):100V Temperature Coefficient:±25ppm/℃ Temperature Coefficient:±25ppm/℃ Operating Temperature:-55℃~+155℃ Operating Temperature:-55℃~+155℃"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer Part" "ERA6AEB512V"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier Part" "C473296"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part Name" "薄膜电阻 5.1kΩ ±0.1% 125mW"
+			(at 34.29 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "71ea5922-44f5-4ce1-8cd5-7d7f8e2b5b6d")
+		)
+		(pin "2"
+			(uuid "dfe6417d-7679-4fa1-b146-0f5a6fccd1e0")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:TYPEC-214-ARP14H105")
+		(at 59.69 99.06 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a26cbb53-15de-45dd-8374-5052fb995cab")
+		(property "Reference" "U3"
+			(at 50.8 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TYPEC-214-ARP14H105"
+			(at 50.8 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:USB-TYPE-C-TH_TYPEC-214-ARP14H105"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/TYPEC-214-ARP14H105/3412791.html"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TYPEC-214-ARP14H105"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XUNPU(讯普)"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C2982529"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "Type-C 母 直插"
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A5"
+			(uuid "d75e41ea-deed-4ac2-9ed6-7b767ccf57a3")
+		)
+		(pin "A4"
+			(uuid "0bbd9210-d1e5-4638-8619-c52a310fa09b")
+		)
+		(pin "B7"
+			(uuid "28eea2fb-227d-4815-be4a-8ddcd7cfe823")
+		)
+		(pin "B5"
+			(uuid "9c552ef7-df6e-4bdb-a211-602b40608372")
+		)
+		(pin "B1"
+			(uuid "8c16c0a2-041b-4823-8241-17b7ab103b52")
+		)
+		(pin "A12"
+			(uuid "cefa1733-0231-457c-a36a-881774133fa5")
+		)
+		(pin "A7"
+			(uuid "ff10e58c-e1c4-44b2-a9fb-354410166339")
+		)
+		(pin "A9"
+			(uuid "b86b215b-5dce-4c19-8be7-d2b060225ebf")
+		)
+		(pin "0"
+			(uuid "eee184d1-1f26-4db9-841b-5a42c5eb842f")
+		)
+		(pin "B12"
+			(uuid "a7a83c49-6073-49e5-b7d7-6448986f914a")
+		)
+		(pin "A6"
+			(uuid "56f11b57-19f8-42fe-9661-234a4c6ac794")
+		)
+		(pin "A1"
+			(uuid "7204eee3-ed3e-40da-917f-b3f918fff849")
+		)
+		(pin "B4"
+			(uuid "f779f53c-c18a-48fe-9586-4361174616df")
+		)
+		(pin "B6"
+			(uuid "00942809-d44f-4b1c-a5db-65ac531d1dec")
+		)
+		(pin "B9"
+			(uuid "bd026ae9-5d03-4e3b-ad35-045e013fadf1")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERJ6ENF33R0V")
+		(at 191.77 63.5 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2986f39-25cc-47a5-b99b-b742bf953c4a")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "R4"
+			(at 189.23 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "33Ω"
+			(at 189.23 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERJ6ENF33R0V/405249.html"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Description" "Type:Thick Film Resistor Resistance:33Ω Tolerance:±1% Tolerance:±1% Power(Watts):125mW Voltage-Supply(Max):- Temperature Coefficient:±100ppm/℃ Temperature Coefficient:±100ppm/℃ Operating Temperature:-55℃~+155℃ Operating Temperature:-55℃~+155℃"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Manufacturer Part" "ERJ6ENF33R0V"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Supplier Part" "C413254"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "LCSC Part Name" "33Ω ±1% 125mW 厚膜电阻"
+			(at 191.77 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(pin "2"
+			(uuid "c41ef6ec-5178-4112-93a3-02627c8a095c")
+		)
+		(pin "1"
+			(uuid "482ce79b-0ea2-49dc-96c9-c14d646b324c")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ESP32-C3-WROOM-02-N4(4MB)")
+		(at 139.7 57.15 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ae20d5fc-9c99-4f1a-b9f4-f8f9885ac933")
+		(property "Reference" "U2"
+			(at 132.08 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "2.4GHz"
+			(at 132.08 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:BULETM-SMD_ESPRESSIF_ESP32-C3-WROOM-02-N4-4MB"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ESP32-C3-WROOM-02-N4/3281215.html"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ESP32-C3-WROOM-02-N4"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "ESPRESSIF(乐鑫)"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C2934560"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "不带固件 2.4GHz Wi-Fi（802.11b/g/n）+ 蓝牙5模组"
+			(at 139.7 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "89caeabc-687e-4b4e-b700-ac02509a0b09")
+		)
+		(pin "5"
+			(uuid "bdbf7d1e-3dd0-4b90-bb27-27261f214654")
+		)
+		(pin "11"
+			(uuid "999e2fb5-eb5b-4b65-bd75-caa5906c2279")
+		)
+		(pin "16"
+			(uuid "ec8e86f3-470e-493f-bab1-5ada1219c568")
+		)
+		(pin "1"
+			(uuid "4f40a77e-f361-4f93-b6be-dc3c8f28318b")
+		)
+		(pin "13"
+			(uuid "2bece8b3-baef-4128-9afa-ef1c57c5f7f0")
+		)
+		(pin "10"
+			(uuid "28fa6023-942a-47ce-b902-0c0a38e37d01")
+		)
+		(pin "6"
+			(uuid "8afc0808-2d4a-4c4b-843a-939de609a958")
+		)
+		(pin "2"
+			(uuid "35832001-1f6d-4699-936c-3265b69245d9")
+		)
+		(pin "8"
+			(uuid "e82e30d3-8028-4085-9f76-7f10769bd3cd")
+		)
+		(pin "9"
+			(uuid "961839a9-2652-41be-9a04-b0fbc4b7dd34")
+		)
+		(pin "12"
+			(uuid "a9f8a061-fb6f-4e90-83a4-cad8d195d1b8")
+		)
+		(pin "15"
+			(uuid "0d855166-1e09-4a81-976f-5afbfb9eb018")
+		)
+		(pin "17"
+			(uuid "a2cf7c75-f7d4-477c-8b1f-f0b09eaa23aa")
+		)
+		(pin "19"
+			(uuid "72bf01f3-0737-493c-b8c7-fef957b69168")
+		)
+		(pin "18"
+			(uuid "0dc18b0f-dd5b-467f-a0f2-8578d553748a")
+		)
+		(pin "3"
+			(uuid "a330edea-2fba-4c84-b214-3ec2927cdb79")
+		)
+		(pin "7"
+			(uuid "2f08b3ec-ddd5-471d-b7d6-c6a039bd3519")
+		)
+		(pin "14"
+			(uuid "bf87793b-c9b3-47c6-859b-6d5cd4ee276b")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERJP06F1002V")
+		(at 167.64 45.72 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca8ccef4-27f7-474b-9bf4-3ae4d7d94686")
+		(property "Reference" "R9"
+			(at 165.1 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 165.1 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200515/C543414_D3FB4A44C151AC19BA141503575FC797.pdf"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJP06F1002V"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C543567"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "10kΩ ±1% 500mW 厚膜电阻"
+			(at 167.64 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c575a26-979e-4ca1-b01f-415861205671")
+		)
+		(pin "2"
+			(uuid "b6afed1c-8158-4087-9238-cd62560504a5")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:GRM21B7U1A104JA01L")
+		(at 127 36.83 270)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc5fd709-e686-487c-98b7-5d922504b838")
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field42" ""
+			(at 0 209.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "C3"
+			(at 130.81 36.83 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 130.81 39.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:C0805"
+			(at 127 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20210128/C710980_BEF80F3D26E955AEFCD9E2DE324B32E9.pdf"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Description" "Capacitance: Tolerance:±5% Tolerance:±5% Voltage Rated: Temperature Coefficient:"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer Part" "GRM21B7U1A104JA01L"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Manufacturer" "muRata(村田)"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier Part" "C710980"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "LCSC Part Name" "100nF ±5% 10V"
+			(at 127 36.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify left bottom)
+			)
+		)
+		(pin "1"
+			(uuid "e5f81a1e-05b1-4971-bc4c-9dce571583a8")
+		)
+		(pin "2"
+			(uuid "21f44b76-96f8-4c7c-9ad3-181363d29747")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 45.72 87.63 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd37b243-1ec7-4868-b98a-462f8acc89d7")
+		(property "Reference" "#PWR?"
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 81.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0c488851-f1ba-468a-9920-3a486cdccc8f")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 45.72 110.49 270)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dc5011f6-202e-431e-b8b4-4108af4f707c")
+		(property "Reference" "#PWR?"
+			(at 45.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 45.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65838d81-1307-48dc-8850-ad1782175941")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 153.67 44.45 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df4fe206-41c7-45e7-80a3-8bcffbdce244")
+		(property "Reference" "#PWR?"
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 153.67 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4aaca564-1105-4f86-8b2f-af1866d20f0b")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
+		(at 99.06 71.12 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec61e4b1-0acc-4a03-a209-2396f529c757")
+		(property "Reference" "R5"
+			(at 101.6 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.0414 1.0414)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "220Ω"
+			(at 101.6 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERA6AEB221V"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C445647"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
+			(at 99.06 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "25d97843-ed76-46ff-b255-ea503f2082dd")
+		)
+		(pin "2"
+			(uuid "8346cb64-b929-4aac-a07d-6cbb999e65a3")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:Ground-GND")
+		(at 62.23 55.88 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f77cc1a0-f513-4d57-920c-b15d6e116913")
+		(property "Reference" "#PWR?"
+			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 68.58 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:"
+			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f653835-551d-4719-905a-0eebc5c224fe")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "heimdall-m-easyedapro:ERJP06F1002V")
+		(at 100.33 45.72 90)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8dd1c94-195e-48ae-ad9b-b6d77bb52340")
+		(property "Reference" "R8"
+			(at 102.87 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 102.87 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.2446 1.2446)
+				)
+				(justify right top)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20200515/C543414_D3FB4A44C151AC19BA141503575FC797.pdf"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJP06F1002V"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "PANASONIC(松下)"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C543567"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "10kΩ ±1% 500mW 厚膜电阻"
+			(at 100.33 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cfc16d8a-2ddb-4b2f-bf3a-13fbe3cd14d1")
+		)
+		(pin "1"
+			(uuid "486f1847-56e7-467c-a68d-772f73615dd2")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

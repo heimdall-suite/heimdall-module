@@ -7,6 +7,7 @@ Thumbs.db
 # KiCad local state and backups
 *.lck
 *-backups/
+.history/
 fp-info-cache
 *.kicad_prl
 
