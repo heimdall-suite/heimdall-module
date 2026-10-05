@@ -1,4 +1,4 @@
-"""Bay interface on the PCB: sync to the netlist (R5-R7 out, D3-D6/R14-R17 in), place, strip copper.
+"""Bay interface on the PCB: sync to the netlist (D5 out; U5/C6 in, R17 moved), place, strip copper.
 Run with KiCad's python from hardware/kicad:  python bay_pcb.py NETLIST.xml"""
 import sys, pcbnew, xml.etree.ElementTree as ET
 
@@ -25,9 +25,12 @@ RA, RB, RC, RD = 101.9, 103.95, 106.0, 108.05
 XD, XB, XM = 127.7, 123.1, 132.4
 PLACE = {
     'D3': (XD, RA, 0), 'D4': (XD, RB, 0),            # K at the bay (left)
-    'D5': (XD, RC, 180), 'D6': (XD, RD, 180),        # A at the bay (left)
-    'R17': (XB, (RB + RC) / 2, 0), 'R15': (XB, RD, 0),   # bay-side pull-ups, VCC pad left
     'R14': (XM, RA, 180), 'R16': (XM, RB, 180),      # MCU-side pull-ups, VCC pad right
+    # DATA transmit in the band below row B: U5 beside module pads 6/7, C6 next to it, R17 by the DATA via
+    'U5': (133.4, 106.7, 180), 'C6': (129.25, 106.9, 180), 'R17': (125.2, 107.3, 0),
+    # HB a step lower to make room: D6 (A at the bay, left) and its pull-up R15
+    'D6': (XD, 109.3, 180), 'R15': (122.7, 109.3, 0),
+    'R12': (131.4, 109.9, 0), 'R13': (131.4, 112.1, 0),   # 0.3 lower, so HB_OUT and U5's VCC via fit above
 }
 
 dead = list(b.GetTracks()) + list(b.Zones())
@@ -40,14 +43,15 @@ for ref, c in comps.items():
     f = b.FindFootprintByReference(ref)
     if not f:
         f = load(c.findtext('footprint')); f.SetReference(ref); b.Add(f)
-        f.SetValue(c.findtext('value'))
         f.SetPath(pcbnew.KIID_PATH('/' + c.find('tstamps').text))
         f.SetSheetname('/'); f.SetSheetfile('heimdall-module.kicad_sch')
+        print('add', ref)
+    if ref in PLACE:      # new or changed parts: value and fields from the schematic
+        f.SetValue(c.findtext('value'))
         for fld in c.iter('field'):
             if fld.get('name') not in ('Footprint', 'Datasheet', 'Description'):
                 f.SetField(fld.get('name'), fld.text or '')
                 f.GetField(fld.get('name')).SetVisible(False)
-        print('add', ref)
     if ref in PLACE:
         x, y, r = PLACE[ref]
         f.SetPosition(V(x, y)); f.SetOrientationDegrees(r)
@@ -60,6 +64,9 @@ for ref, c in comps.items():
         if ni is None:
             ni = pcbnew.NETINFO_ITEM(b, name); b.Add(ni)
         p.SetNet(ni)
+
+# JP1's reference would sit on D6 (one row lower now): left of the jumper instead
+b.FindFootprintByReference('JP1').Reference().SetPosition(V(122.8, 112.0))
 
 for it in dead:
     b.Remove(it)

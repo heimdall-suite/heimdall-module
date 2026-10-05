@@ -96,6 +96,23 @@ if sys.argv[1] == "prep":
     # D+/D- cross links: D+ on top, D- on the bottom, so they can cross
     track(b, "/USB-D+", F, A, 106.198, Bx, 105.248, 0.25)
     track(b, "/USB-D-", B, A, 105.298, Bx, 106.148, 0.25)
+    # D+ from R3 through U4 round the right of the connector to B6 (Freerouting's rev 2 path; it no
+    # longer finds it reliably once the bay buffers are in)
+    for (x0, y0, x1, y1) in ((157.3, 105.2, 158.19, 105.2), (158.19, 105.2, 158.19, 104.53), (158.19, 104.53, 158.55, 104.18),
+                             (158.55, 104.18, 163.76, 104.18), (163.76, 104.18, 164.45, 104.86), (164.45, 104.86, 164.45, 108.94),
+                             (164.45, 108.94, 166.24, 110.73), (166.24, 110.73, 171.05, 110.73), (171.05, 110.73, 173.0, 108.78),
+                             (173.0, 108.78, 173.0, 106.69), (173.0, 106.69, 171.56, 105.25), (171.56, 105.25, Bx, 105.248)):
+        track(b, "/USB-D+", F, x0, y0, x1, y1, 0.25)
+    # D- likewise: R4 -> U4 on top, under U4 on the bottom to A7
+    for (x0, y0, x1, y1) in ((157.3, 107.4, 158.37, 106.33), (158.37, 106.33, 163.53, 106.33),
+                             (166.35, 104.863, 166.35, 108.9)):
+        track(b, "/USB-D-", F, x0, y0, x1, y1, 0.25)
+    via(b, "/USB-D-", 163.53, 106.33, 0.7, 0.3)
+    via(b, "/USB-D-", 166.35, 108.9, 0.7, 0.3)
+    for (x0, y0, x1, y1) in ((163.53, 106.33, 164.8, 106.33), (164.8, 106.33, 166.35, 107.88), (166.35, 107.88, 166.35, 108.9),
+                             (166.35, 107.88, 168.04, 106.2), (168.04, 106.2, 168.64, 106.2), (168.64, 106.2, 169.53, 105.3),
+                             (169.53, 105.3, A, 105.298)):
+        track(b, "/USB-D-", B, x0, y0, x1, y1, 0.25)
     # CC2: B5 up the channel on the bottom, via, to R1 right of the connector
     track(b, "Net-(U3-CC2)", B, Bx, 104.348, C, 104.348, 0.25)
     track(b, "Net-(U3-CC2)", B, C, 104.348, C, 101.3, 0.25)
@@ -135,9 +152,44 @@ if sys.argv[1] == "prep":
                              (159.2, 98.48, 126.3, 98.48), (126.3, 98.48, 126.3, 104.27), (126.3, 104.27, 125.6, 104.97)):
         track(b, "/DATA", B, x0, y0, x1, y1, 0.25)
     via(b, "/DATA", 125.6, 104.97, 0.7, 0.3)
-    track(b, "/DATA", F, 125.6, 104.97, 124.1, 104.97, 0.25)           # R17 (1.5k pull-up)
     track(b, "/DATA", F, 125.6, 104.97, 126.65, 103.95, 0.25)          # D4 cathode (RX)
-    track(b, "/DATA", F, 125.6, 104.97, 126.65, 106.0, 0.25)           # D5 anode (TX)
+    track(b, "/DATA", F, 125.6, 104.97, 124.2, 106.4, 0.25)            # R17 (1k from U5)
+    track(b, "/DATA", F, 124.2, 106.4, 124.2, 107.3, 0.25)
+    # DATA transmit: module pad 6 (IO7) -> U5 input, U5 output -> R17 under C6
+    track(b, "/DATA_TX", F, 136.904, 105.978, 136.1, 106.2, 0.25)
+    track(b, "/DATA_TX", F, 136.1, 106.2, 135.4, 106.7, 0.25)
+    track(b, "/DATA_TX", F, 135.4, 106.7, 134.54, 106.7, 0.25)
+    for (x0, y0, x1, y1) in ((132.26, 105.75, 131.8, 105.3), (131.8, 105.3, 126.8, 105.3),
+                             (126.8, 105.3, 126.2, 105.9), (126.2, 105.9, 126.2, 107.3)):
+        track(b, "/DATA_DRV", F, x0, y0, x1, y1, 0.25)
+    # U5 supply: VCC via between U5 and C6 onto the bottom 3V3 track; GND vias beside U5 pin 3 and C6
+    track(b, "/VCC", F, 132.26, 107.65, 131.25, 108.05, 0.3)
+    track(b, "/VCC", F, 131.25, 108.05, 130.25, 106.9, 0.3)
+    via(b, "/VCC", 131.25, 108.05, 0.6, 0.3)
+    track(b, "/VCC", B, 131.25, 108.05, 134.6, 108.05, 0.3)
+    track(b, "GND", F, 134.54, 105.75, 135.3, 105.0, 0.3)
+    via(b, "GND", 135.3, 105.0, 0.6, 0.3)
+    track(b, "GND", F, 128.25, 106.9, 127.3, 106.0, 0.3)
+    via(b, "GND", 127.3, 106.0, 0.6, 0.3)
+    # HB_OUT: module pad 7 (IO8) under U5 to D6, R12 (its pull-up) tapped on the way
+    for (x0, y0, x1, y1) in ((136.904, 107.478, 136.0, 107.8), (136.0, 107.8, 135.3, 108.73),
+                             (135.3, 108.73, 129.6, 108.73), (129.6, 108.73, 128.75, 109.3)):
+        track(b, "/HB_OUT", F, x0, y0, x1, y1, 0.25)
+    track(b, "/HB_OUT", F, 130.4, 108.73, 130.4, 109.9, 0.25)
+    # HB (H1 pin 2): down the right-hand side on the bottom, then on top under the module's pad row
+    # and up the left edge to R15/D6 (the path Freerouting found in rev 2, fixed here so the
+    # bay interface can't crowd it out)
+    track(b, "/HB", F, 164.577, 95.791, 163.5, 95.79, 0.25)
+    via(b, "/HB", 163.5, 95.79, 0.7, 0.3)
+    for (x0, y0, x1, y1) in ((163.5, 95.79, 163.5, 101.22), (163.5, 101.22, 162.81, 101.9),
+                             (162.81, 101.9, 162.81, 109.86), (162.81, 109.86, 163.62, 110.67)):
+        track(b, "/HB", B, x0, y0, x1, y1, 0.25)
+    via(b, "/HB", 163.62, 110.67, 0.7, 0.3)
+    for (x0, y0, x1, y1) in ((163.62, 110.67, 162.17, 112.12), (162.17, 112.12, 135.31, 112.12),
+                             (135.31, 112.12, 134.1, 113.34), (134.1, 113.34, 126.06, 113.34),
+                             (126.06, 113.34, 124.1, 111.37), (124.1, 111.37, 124.1, 109.3),
+                             (124.1, 109.3, 126.65, 109.3)):
+        track(b, "/HB", F, x0, y0, x1, y1, 0.25)
     # 3V3 trunk (Espressif: >= 20 mil for VDD3P3): U1 tab heatsink -> bottom, up along the module's
     # right edge, left under the antenna end of the module, up next to module pin 1 (an L, so the
     # bottom under the module stays free for the right-hand pins); short top branch to C3
@@ -151,9 +203,9 @@ if sys.argv[1] == "prep":
     track(b, "/VCC", F, 133.9, 96.2, 132.811, 94.953, 0.3)
     # left-hand 3V3 group (R12/R13 pull-ups, J2, I2C pull-ups): from the trunk via, down on the bottom
     track(b, "/VCC", B, 134.6, 99.4, 134.6, 109.2, 0.3)
-    track(b, "/VCC", B, 134.6, 109.2, 133.8, 110.0, 0.3)
-    via(b, "/VCC", 133.8, 110.0, 0.7, 0.3)   # below the module's IO8/IO9 escapes
-    track(b, "/VCC", F, 133.8, 110.0, 132.4, 109.6, 0.3)
+    track(b, "/VCC", B, 134.6, 109.2, 133.8, 110.3, 0.3)
+    via(b, "/VCC", 133.8, 110.3, 0.7, 0.3)   # below the module's IO8/IO9 escapes
+    track(b, "/VCC", F, 133.8, 110.3, 132.4, 109.9, 0.3)
     # R14/R16 (MCU-side bay pull-ups): VCC pad straight onto that bottom track
     for y in (101.9, 103.95):
         track(b, "/VCC", F, 133.4, y, 134.6, y, 0.3)
@@ -179,6 +231,13 @@ if sys.argv[1] == "prep":
         k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName(name); b.Add(k)
     # the pocket between the antenna cut-out and the SIGNAL/DATA runs can't reach the GND pours
     rulearea("no copper: pocket beside the antenna cut-out", rect(154.67, 90.0, 158.15, 97.85), fills=True)
+    # J2 pin 1 (GND, plated through, fed from the bottom pour): the routing round the header leaves
+    # a top-pour sliver between pins 3 and 1 that hangs on pin 1 by one spoke; keep the pour out
+    k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetLayer(F)
+    o = k.Outline(); o.NewOutline()
+    for x, y in rect(139.6, 114.45, 140.95, 116.1): o.Append(MM(x), MM(y))
+    k.SetDoNotAllowTracks(False); k.SetDoNotAllowVias(False); k.SetDoNotAllowZoneFills(True)
+    k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName("no pour sliver at J2 pin 1"); b.Add(k)
     # keep other nets' tracks out of the regulator heatsink copper (it would be cut in two)
     rulearea("U1 heatsink: no other tracks", rect(156.1, 112.9, 163.4, 118.6))
     # H1 slot: 0.5mm copper-free margin (the autorouter only keeps its 0.2mm clearance)
