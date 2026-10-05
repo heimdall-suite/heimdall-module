@@ -904,7 +904,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/USB-TYPE-C-TH_TYPEC-214-ARP14H105.step"
 			(offset
-				(xyz 0 0 -2)
+				(xyz 0 0 2.6)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -1665,7 +1665,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/C0805_L2.0-W1.3-H1.3.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -3855,7 +3855,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/C0805_L2.0-W1.3-H1.3.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -5376,7 +5376,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/C0805_L2.0-W1.3-H1.3.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
@@ -10314,7 +10314,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/C0805_L2.0-W1.3-H1.3.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 0.65)
 			)
 			(scale
 				(xyz 1 1 1)
