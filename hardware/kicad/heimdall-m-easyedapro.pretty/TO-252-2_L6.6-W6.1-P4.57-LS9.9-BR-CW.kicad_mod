@@ -273,13 +273,13 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/EASYEDA_MODELS/TO-252-2L-3P_L6.6-W6.1-H2.3-LS10.1-P4.6.step"
 		(offset
-			(xyz -1.0005 0 0)
+			(xyz 4.45 -2.2 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -90)
+			(xyz 0 0 -90)
 		)
 	)
 )
