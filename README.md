@@ -8,6 +8,32 @@ Hardware rev 2 (KiCad 10, `hardware/kicad/`): schematic reviewed and corrected,
 board re-placed and re-routed from the first EasyEDA layout. Not built or tested
 yet. The EasyEDA originals are kept in `hardware/easyeda-archive/`. No firmware yet.
 
+## Case
+
+The board is shaped for the 3D-printed case `MULTI-Module_Bangood_4-in-1_Case.stl`
+(the STL is not in this repo). The figures below were measured from that STL:
+
+- The outline is the case cavity (57 x 41.5 mm) minus 0.3 mm all round. It has
+  notches for the two latch housings, which reach 4 mm in from the long walls.
+  The top notch merges with the cut-out under the ESP32 module's antenna.
+- MH1-MH3 are M2 holes on the case's three standoffs. The board sits 2 mm above
+  the case floor, so through-hole pins (J2, the USB-C mounting legs) have to be
+  cut flush. The copper keeps 2 mm clear of each hole for the screw head.
+- The bay pins come up through the floor opening and the H1 slot into the
+  female header on top.
+- **H1 position:** taken from three existing JR-bay designs. All three put the
+  bay pins about 1.25 mm closer to the end wall than the centre of the case's
+  floor opening:
+  - DIY Multiprotocol STM32 v1.0t (Eagle)
+  - Multiprotocol V2 (Gerbers)
+  - ExpressLRS TX_SX1280 (Gerbers)
+
+  This is not yet checked against a real radio.
+- The case still needs an opening for the USB-C connector.
+
+`case_place.py` moved the rev 2 parts into the case outline. `route_pcb.py prep`
+draws the hand routes per placement group.
+
 ## Pin assignment (rev 2)
 
 | Function | ESP32-C3 GPIO | Via |

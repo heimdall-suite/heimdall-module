@@ -19,14 +19,16 @@ MM = pcbnew.FromMM
 # hand routes are locked; note Freerouting never counts them (locked or not) as connections,
 # so a net touched by a hand route has to be finished by hand
 LOCK = True
-def V(x, y): return pcbnew.VECTOR2I_MM(x, y)
+# offset of the placement group being drawn (prep), see grp()
+OFF = [0.0, 0.0]
+def V(x, y): return pcbnew.VECTOR2I_MM(x + OFF[0], y + OFF[1])
 
 def zone(b, net, layer, pts, prio, clear=0.25, full=True, name=""):
     z = pcbnew.ZONE(b)
     z.SetLayer(layer)
     z.SetNetCode(b.GetNetsByName()[net].GetNetCode())
     o = z.Outline(); o.NewOutline()
-    for x, y in pts: o.Append(MM(x), MM(y))
+    for x, y in pts: o.Append(MM(x + OFF[0]), MM(y + OFF[1]))
     z.SetAssignedPriority(prio)
     z.SetLocalClearance(MM(clear))
     z.SetMinThickness(MM(0.25))
@@ -59,25 +61,48 @@ def pad_boxes(b, margin):
 def in_boxes(boxes, x, y): return any(a <= x <= d and c <= y <= e for a, c, d, e in boxes)
 
 if sys.argv[1] == "prep":
+    # Board fitted to MULTI-Module_Bangood_4-in-1_Case (see case_place in the commit log): the hand
+    # routes are drawn per placement group with that group's offset from the rev 2 layout
+    #   L (module, left side, J2):            +0.0, +2.8
+    #   R (USB-C, ESD, D1/D2, R3/R4, C1):     +0.0, +3.7
+    #   U1 (regulator):                       +4.1, +3.7
+    #   H1 (bay header + slot):               +1.25, +0.25
+    # Routes that cross groups are drawn in absolute coordinates (offset 0).
     b = pcbnew.LoadBoard(sys.argv[2])
     F, B = pcbnew.F_Cu, pcbnew.B_Cu
+    def grp(dx, dy): OFF[0], OFF[1] = dx, dy
+    def rulearea(name, pts, tracks=True, vias=True, fills=False, layer=None):
+        k = pcbnew.ZONE(b); k.SetIsRuleArea(True)
+        if layer is None: k.SetLayerSet(pcbnew.LSET.AllCuMask())
+        else: k.SetLayer(layer)
+        o = k.Outline(); o.NewOutline()
+        for x, y in pts: o.Append(MM(x + OFF[0]), MM(y + OFF[1]))
+        k.SetDoNotAllowTracks(tracks); k.SetDoNotAllowVias(vias); k.SetDoNotAllowZoneFills(fills)
+        k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName(name); b.Add(k)
+
+    # ------------------------------------------------------------------ U1 group
     # U1 (MC33269, DPAK) dissipates (VBAT - 3.3V) x I_load into its tab, which is VCC (Vout):
-    # VCC copper on both layers around the tab, joined by vias beside the pad (never in it)
-    # (kept clear of the bottom edge, so GND can pass underneath on both layers)
-    tab = rect(155.0, 112.3, 163.4, 118.6)
-    zone(b, "/VCC", F, tab, 10, name="U1 tab heatsink (top)")
-    zone(b, "/VCC", B, tab, 10, name="U1 tab heatsink (bottom)")
-    for x, y in ((155.6, 113.0), (155.6, 114.4), (155.6, 115.8), (155.6, 117.2)):
+    # VCC copper on both layers around the tab, joined by vias beside the pad (never in it).
+    # The bottom copper reaches further left so the 3V3 trunk and R11's feed can land in it.
+    grp(0, 0)
+    zone(b, "/VCC", F, rect(159.1, 116.0, 167.5, 122.3), 10, name="U1 tab heatsink (top)")
+    zone(b, "/VCC", B, rect(155.2, 116.0, 167.5, 122.3), 10, name="U1 tab heatsink (bottom)")
+    for x, y in ((159.7, 116.7), (159.7, 118.1), (159.7, 119.5), (159.7, 120.9)):
         via(b, "/VCC", x, y)
+    track(b, "/VCC", F, 158.0, 119.7, 159.7, 119.5, 0.6)      # C2 (output cap) onto the tab copper
+    rulearea("U1 heatsink: no other tracks", rect(160.2, 116.6, 167.5, 122.3))
+    # and none across the bottom copper's left part either (the trunk and R11 land there)
+    rulearea("U1 heatsink bottom: no other tracks", rect(155.2, 116.6, 160.2, 122.3), layer=B)
+
+    # ------------------------------------------------------------------ L group
+    grp(0, 2.8)
     # no tracks or vias on top under the module body (keep it GND, per Espressif's layout guide)
-    ko = pcbnew.ZONE(b); ko.SetIsRuleArea(True); ko.SetLayer(F)
-    o = ko.Outline(); o.NewOutline()
-    for x, y in rect(138.3, 97.6, 152.0, 111.0): o.Append(MM(x), MM(y))
-    ko.SetDoNotAllowTracks(True); ko.SetDoNotAllowVias(True); ko.SetDoNotAllowZoneFills(False)
-    ko.SetDoNotAllowPads(False); ko.SetDoNotAllowFootprints(False); ko.SetZoneName("U2 underside: GND only")
-    b.Add(ko)
+    rulearea("U2 underside: GND only", rect(138.3, 97.6, 152.0, 111.0), tracks=True, vias=True, layer=F)
+
+    # ------------------------------------------------------------------ R group
+    grp(0, 3.7)
     # U3 (vertical USB-C): rows A (x=169.59) and B (x=170.99) leave a 0.7mm channel at x=170.29;
-    # everything that has to pass between the rows is laid here by hand
+    # everything that has to pass between the rows is laid here by hand (y below: rev 2 values)
     A, Bx, C = 169.592, 170.992, 170.292
     # VBUS: both connector pairs out through the channel (0.3: pin pitch), then a 0.6 rail at
     # x=167.4 joining them to D1's anode and U4's VBUS pin
@@ -96,8 +121,7 @@ if sys.argv[1] == "prep":
     # D+/D- cross links: D+ on top, D- on the bottom, so they can cross
     track(b, "/USB-D+", F, A, 106.198, Bx, 105.248, 0.25)
     track(b, "/USB-D-", B, A, 105.298, Bx, 106.148, 0.25)
-    # D+ from R3 through U4 round the right of the connector to B6 (Freerouting's rev 2 path; it no
-    # longer finds it reliably once the bay buffers are in)
+    # D+ from R3 through U4 round the right of the connector to B6
     for (x0, y0, x1, y1) in ((157.3, 105.2, 158.19, 105.2), (158.19, 105.2, 158.19, 104.53), (158.19, 104.53, 158.55, 104.18),
                              (158.55, 104.18, 163.76, 104.18), (163.76, 104.18, 164.45, 104.86), (164.45, 104.86, 164.45, 108.94),
                              (164.45, 108.94, 166.24, 110.73), (166.24, 110.73, 171.05, 110.73), (171.05, 110.73, 173.0, 108.78),
@@ -113,43 +137,88 @@ if sys.argv[1] == "prep":
                              (166.35, 107.88, 168.04, 106.2), (168.04, 106.2, 168.64, 106.2), (168.64, 106.2, 169.53, 105.3),
                              (169.53, 105.3, A, 105.298)):
         track(b, "/USB-D-", B, x0, y0, x1, y1, 0.25)
-    # CC2: B5 up the channel on the bottom, via, to R1 right of the connector
+    # CC2 / CC1: out of the channel on the bottom (the R1/R2 ends are absolute, below)
     track(b, "Net-(U3-CC2)", B, Bx, 104.348, C, 104.348, 0.25)
     track(b, "Net-(U3-CC2)", B, C, 104.348, C, 101.3, 0.25)
-    track(b, "Net-(U3-CC2)", B, C, 101.3, 171.3, 100.3, 0.25)
-    via(b, "Net-(U3-CC2)", 171.3, 100.3, 0.7, 0.3)
-    track(b, "Net-(U3-CC2)", F, 171.3, 100.3, 172.9, 99.7, 0.25)
-    # CC1: A5 down the channel on the bottom, via, to R2
     track(b, "Net-(U3-CC1)", B, A, 107.098, C, 107.098, 0.25)
     track(b, "Net-(U3-CC1)", B, C, 107.098, C, 109.9, 0.25)
     track(b, "Net-(U3-CC1)", B, C, 109.9, 171.792, 111.4, 0.25)
     track(b, "Net-(U3-CC1)", B, 171.792, 111.4, 173.3, 111.4, 0.25)
     via(b, "Net-(U3-CC1)", 173.3, 111.4, 0.7, 0.3)
-    track(b, "Net-(U3-CC1)", F, 173.3, 111.4, 173.33, 113.115, 0.25)
-    # VBAT_IN: H1 pin 3 sits in the strip between the board edge and the slot; via beside it,
-    # round the slot's left end on the bottom, up again between D1 and D2
-    track(b, "/VBAT_IN", F, 167.12, 91.575, 164.8, 91.55, 0.6)
-    via(b, "/VBAT_IN", 164.8, 91.55)
-    track(b, "/VBAT_IN", B, 164.8, 91.55, 159.9, 91.55, 0.6)
-    track(b, "/VBAT_IN", B, 159.9, 91.55, 159.9, 100.25, 0.6)
-    track(b, "/VBAT_IN", B, 159.9, 100.25, 162.0, 100.25, 0.6)
-    via(b, "/VBAT_IN", 162.0, 100.25)
-    track(b, "/VBAT_IN", F, 162.0, 100.25, 164.09, 101.9, 0.6)
-    # SIGNAL (H1 pin 1) and DATA (H1 pin 5) both start in the strip between board edge and slot.
-    # They cross the board on the bottom side by side just under the antenna cut-out (SIGNAL at
-    # y=98.03, 0.5mm from the cut-out, DATA at 98.48) to the bay interface diodes left of the module
-    track(b, "/SIGNAL", F, 162.037, 91.575, 158.4, 91.575, 0.25)
-    track(b, "/SIGNAL", F, 158.4, 91.575, 158.4, 96.6, 0.25)
-    track(b, "/SIGNAL", F, 158.4, 96.6, 156.6, 97.2, 0.25)
-    via(b, "/SIGNAL", 156.6, 97.2, 0.7, 0.3)
+    # U4's GND pin is boxed in by VBUS and the USB lines: own via
+    track(b, "GND", F, 165.4, 107.135, 165.4, 108.9, 0.3)
+    via(b, "GND", 165.4, 108.9, 0.7, 0.3)
+
+    # ------------------------------------------------------------------ absolute: R1/R2 ends
+    grp(0, 0)
+    # CC2: from the channel (C, 105.0) left of the M2 hole up to R1 beside H1
+    for (x0, y0, x1, y1) in ((C, 105.0, 168.9, 103.6), (168.9, 103.6, 168.9, 98.6), (168.9, 98.6, 169.3, 98.2)):
+        track(b, "Net-(U3-CC2)", B, x0, y0, x1, y1, 0.25)
+    via(b, "Net-(U3-CC2)", 169.3, 98.2, 0.7, 0.3)
+    track(b, "Net-(U3-CC2)", F, 169.3, 98.2, 170.8, 98.0, 0.25)
+    # CC1: via right of the connector, on top down to R2 at the right edge
+    track(b, "Net-(U3-CC1)", F, 173.3, 115.1, 174.6, 116.4, 0.25)
+    track(b, "Net-(U3-CC1)", F, 174.6, 116.4, 174.6, 117.0, 0.25)
+
+    # ------------------------------------------------------------------ absolute: bay lines from H1
+    # H1 pins 1/3/5 sit in the strip between the board edge and the slot, pins 2/4 below the slot.
+    # VBAT_IN: via beside pin 3, round the slot's left end on the bottom, up between D1 and D2
+    track(b, "/VBAT_IN", F, 168.367, 91.825, 166.05, 91.8, 0.6)
+    via(b, "/VBAT_IN", 166.05, 91.8)
+    for (x0, y0, x1, y1) in ((166.05, 91.8, 160.6, 91.8), (160.6, 91.8, 160.6, 103.95), (160.6, 103.95, 161.9, 103.95)):
+        track(b, "/VBAT_IN", B, x0, y0, x1, y1, 0.6)
+    via(b, "/VBAT_IN", 161.9, 103.95)
+    track(b, "/VBAT_IN", F, 161.9, 103.95, 164.093, 105.6, 0.6)
+    # SIGNAL: on top past the latch notch, via beside the antenna cut-out, then the L-group bottom run
+    for (x0, y0, x1, y1) in ((163.287, 91.825, 159.0, 91.825), (159.0, 91.825, 159.0, 99.4), (159.0, 99.4, 156.6, 100.0)):
+        track(b, "/SIGNAL", F, x0, y0, x1, y1, 0.25)
+    via(b, "/SIGNAL", 156.6, 100.0, 0.7, 0.3)
+    # DATA: via beside pin 5, along the top edge on the bottom, down at x=159.2 to the L-group run
+    track(b, "/DATA", F, 173.447, 91.825, 171.15, 91.7, 0.25)
+    via(b, "/DATA", 171.15, 91.7, 0.7, 0.3)
+    for (x0, y0, x1, y1) in ((171.15, 91.7, 170.48, 91.03), (170.48, 91.03, 159.2, 91.03), (159.2, 91.03, 159.2, 101.28)):
+        track(b, "/DATA", B, x0, y0, x1, y1, 0.25)
+    # HB: via beside pin 2, down on the bottom at x=162.7, then west on top below the module
+    track(b, "/HB", F, 165.827, 96.041, 164.75, 96.04, 0.25)
+    via(b, "/HB", 164.75, 96.04, 0.7, 0.3)
+    track(b, "/HB", B, 164.75, 96.04, 162.7, 98.09, 0.25)
+    track(b, "/HB", B, 162.7, 98.09, 162.7, 115.35, 0.25)
+    via(b, "/HB", 162.7, 115.35, 0.7, 0.3)
+    track(b, "/HB", F, 162.7, 115.35, 134.95, 115.35, 0.25)
+    track(b, "/HB", F, 134.95, 115.35, 134.1, 116.14, 0.25)
+    # 3V3 trunk start: from the bottom heatsink copper up the module's right edge (the rest is L)
+    track(b, "/VCC", B, 155.6, 116.4, 155.6, 102.2, 0.5)
+    # R11's feed down into the bottom heatsink copper
+    track(b, "/VCC", B, 157.0, 115.4, 157.0, 116.4, 0.3)
+    # GND spine: module pad 9 along the strip under the pad row to C1's GND pad keeps the pours joined
+    track(b, "GND", F, 136.904, 113.278, 137.88, 114.65, 0.4)
+    track(b, "GND", F, 137.88, 114.65, 160.8, 114.65, 0.4)
+    track(b, "GND", F, 160.8, 114.65, 161.8, 113.5, 0.4)
+    # copper-free around the M2 holes (screw head ~3.8mm on top, standoff on the bottom)
+    import math
+    for i, (cx, cy) in enumerate(((126.42, 91.73), (172.02, 101.63), (157.92, 123.83))):
+        rulearea("M2 hole %d keepout" % (i + 1), [(cx + 2.0 * math.cos(k * math.pi / 8), cy + 2.0 * math.sin(k * math.pi / 8)) for k in range(16)],
+                 fills=True)
+    # H1 pin 4 (GND) is boxed in below the slot: via beside it, shared with R1's GND pad
+    track(b, "GND", F, 170.907, 96.041, 172.4, 96.45, 0.3)
+    track(b, "GND", F, 172.8, 98.0, 172.4, 96.45, 0.3)
+    via(b, "GND", 172.4, 96.45, 0.6, 0.3)
+    # no pour in the strip above the slot (bay pins 1/3/5 only; a GND fill there is an island)
+    rulearea("no pour: strip above the H1 slot", rect(158.6, 89.0, 176.5, 92.45), tracks=False, vias=False, fills=True)
+    # the pocket between the antenna cut-out and the latch notch can't reach the GND pours
+    rulearea("no pour: pocket beside the antenna cut-out", rect(154.67, 93.0, 158.15, 99.6), tracks=False, vias=False, fills=True)
+    # H1 slot: 0.5mm copper-free margin (the autorouter only keeps its 0.2mm clearance)
+    grp(1.25, 0.25)
+    rulearea("H1 slot margin", rect(160.267, 92.183, 173.967, 95.183))
+
+    # ------------------------------------------------------------------ L group: left side
+    grp(0, 2.8)
+    # SIGNAL / DATA bottom runs under the antenna cut-out to the bay interface diodes
     for (x0, y0, x1, y1) in ((156.6, 97.2, 156.6, 98.03), (156.6, 98.03, 125.4, 98.03), (125.4, 98.03, 125.4, 101.9)):
         track(b, "/SIGNAL", B, x0, y0, x1, y1, 0.25)
     via(b, "/SIGNAL", 125.4, 101.9, 0.7, 0.3)
     track(b, "/SIGNAL", F, 125.4, 101.9, 126.65, 101.9, 0.25)          # D3 cathode
-    track(b, "/DATA", F, 172.197, 91.575, 169.9, 91.45, 0.25)
-    via(b, "/DATA", 169.9, 91.45, 0.7, 0.3)
-    for (x0, y0, x1, y1) in ((169.9, 91.45, 169.23, 90.78), (169.23, 90.78, 159.2, 90.78), (159.2, 90.78, 159.2, 98.48),
-                             (159.2, 98.48, 126.3, 98.48), (126.3, 98.48, 126.3, 104.27), (126.3, 104.27, 125.6, 104.97)):
+    for (x0, y0, x1, y1) in ((159.2, 98.48, 126.3, 98.48), (126.3, 98.48, 126.3, 104.27), (126.3, 104.27, 125.6, 104.97)):
         track(b, "/DATA", B, x0, y0, x1, y1, 0.25)
     via(b, "/DATA", 125.6, 104.97, 0.7, 0.3)
     track(b, "/DATA", F, 125.6, 104.97, 126.65, 103.95, 0.25)          # D4 cathode (RX)
@@ -176,24 +245,13 @@ if sys.argv[1] == "prep":
                              (135.3, 108.73, 129.6, 108.73), (129.6, 108.73, 128.75, 109.3)):
         track(b, "/HB_OUT", F, x0, y0, x1, y1, 0.25)
     track(b, "/HB_OUT", F, 130.4, 108.73, 130.4, 109.9, 0.25)
-    # HB (H1 pin 2): down the right-hand side on the bottom, then on top under the module's pad row
-    # and up the left edge to R15/D6 (the path Freerouting found in rev 2, fixed here so the
-    # bay interface can't crowd it out)
-    track(b, "/HB", F, 164.577, 95.791, 163.5, 95.79, 0.25)
-    via(b, "/HB", 163.5, 95.79, 0.7, 0.3)
-    for (x0, y0, x1, y1) in ((163.5, 95.79, 163.5, 101.22), (163.5, 101.22, 162.81, 101.9),
-                             (162.81, 101.9, 162.81, 109.86), (162.81, 109.86, 163.62, 110.67)):
-        track(b, "/HB", B, x0, y0, x1, y1, 0.25)
-    via(b, "/HB", 163.62, 110.67, 0.7, 0.3)
-    for (x0, y0, x1, y1) in ((163.62, 110.67, 162.17, 112.12), (162.17, 112.12, 135.31, 112.12),
-                             (135.31, 112.12, 134.1, 113.34), (134.1, 113.34, 126.06, 113.34),
-                             (126.06, 113.34, 124.1, 111.37), (124.1, 111.37, 124.1, 109.3),
-                             (124.1, 109.3, 126.65, 109.3)):
+    # HB: under J2's top edge and up the left side to R15/D6
+    for (x0, y0, x1, y1) in ((134.1, 113.34, 126.06, 113.34), (126.06, 113.34, 124.1, 111.37),
+                             (124.1, 111.37, 124.1, 109.3), (124.1, 109.3, 126.65, 109.3)):
         track(b, "/HB", F, x0, y0, x1, y1, 0.25)
-    # 3V3 trunk (Espressif: >= 20 mil for VDD3P3): U1 tab heatsink -> bottom, up along the module's
-    # right edge, left under the antenna end of the module, up next to module pin 1 (an L, so the
-    # bottom under the module stays free for the right-hand pins); short top branch to C3
-    track(b, "/VCC", B, 155.6, 113.0, 155.6, 99.4, 0.5)
+    # 3V3 trunk (Espressif: >= 20 mil for VDD3P3): left under the antenna end of the module, up next
+    # to module pin 1 (an L, so the bottom under the module stays free for the right-hand pins);
+    # short top branch to C3
     track(b, "/VCC", B, 155.6, 99.4, 134.6, 99.4, 0.5)
     via(b, "/VCC", 134.6, 99.4)
     track(b, "/VCC", F, 134.6, 99.4, 135.2, 98.48, 0.5)
@@ -201,6 +259,15 @@ if sys.argv[1] == "prep":
     track(b, "/VCC", F, 134.6, 99.4, 133.9, 98.7, 0.3)
     track(b, "/VCC", F, 133.9, 98.7, 133.9, 96.2, 0.3)
     track(b, "/VCC", F, 133.9, 96.2, 132.811, 94.953, 0.3)
+    # on to C5 (bulk cap): C5 and C3 face each other with opposite pads, so round C5's GND pad
+    track(b, "/VCC", F, 133.9, 96.2, 133.9, 93.45, 0.3)
+    track(b, "/VCC", F, 133.9, 93.45, 130.1, 93.45, 0.3)
+    track(b, "/VCC", F, 130.1, 93.45, 130.1, 91.9, 0.3)
+    track(b, "/VCC", F, 127.366, 94.334, 128.3, 93.45, 0.3)        # R8 (EN pull-up)
+    track(b, "/VCC", F, 128.3, 93.45, 130.1, 93.45, 0.3)
+    # JP1's GND pad is boxed in on top by HB and the IO9 run: own via
+    track(b, "GND", F, 127.05, 111.6, 128.35, 111.6, 0.3)
+    via(b, "GND", 128.35, 111.6, 0.6, 0.3)
     # left-hand 3V3 group (R12/R13 pull-ups, J2, I2C pull-ups): from the trunk via, down on the bottom
     track(b, "/VCC", B, 134.6, 99.4, 134.6, 109.2, 0.3)
     track(b, "/VCC", B, 134.6, 109.2, 133.8, 110.3, 0.3)
@@ -210,43 +277,14 @@ if sys.argv[1] == "prep":
     for y in (101.9, 103.95):
         track(b, "/VCC", F, 133.4, y, 134.6, y, 0.3)
         via(b, "/VCC", 134.6, y, 0.7, 0.3)
-    # R11 (IO2 pull-up, VCC pad at the bottom): via below it, down on the bottom into the heatsink
+    # R11 (IO2 pull-up, VCC pad at the bottom): via below it, down on the bottom (absolute part above)
     track(b, "/VCC", F, 157.0, 102.0, 157.0, 103.5, 0.3)
     via(b, "/VCC", 157.0, 103.5, 0.7, 0.3)
     track(b, "/VCC", B, 157.0, 103.5, 157.0, 112.6, 0.3)
-    # GND spine: the right-hand side (USB, regulator, bay connector) is fenced off from the GND
-    # under the module by the module's pad row and the routing; a GND track from module pad 9
-    # along the strip under the pad row to C1's GND pad keeps the pours joined
-    track(b, "GND", F, 136.904, 110.478, 137.88, 111.45, 0.4)
-    track(b, "GND", F, 137.88, 111.45, 160.8, 111.45, 0.4)
-    track(b, "GND", F, 160.8, 111.45, 161.795, 109.795, 0.4)
-    # U4's GND pin is boxed in by VBUS and the USB lines: own via
-    track(b, "GND", F, 165.4, 107.135, 165.4, 108.9, 0.3)
-    via(b, "GND", 165.4, 108.9, 0.7, 0.3)
-    def rulearea(name, pts, tracks=True, vias=True, fills=False):
-        k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetLayerSet(pcbnew.LSET.AllCuMask())
-        o = k.Outline(); o.NewOutline()
-        for x, y in pts: o.Append(MM(x), MM(y))
-        k.SetDoNotAllowTracks(tracks); k.SetDoNotAllowVias(vias); k.SetDoNotAllowZoneFills(fills)
-        k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName(name); b.Add(k)
-    # the pocket between the antenna cut-out and the SIGNAL/DATA runs can't reach the GND pours
-    rulearea("no copper: pocket beside the antenna cut-out", rect(154.67, 90.0, 158.15, 97.85), fills=True)
     # J2 pin 1 (GND, plated through, fed from the bottom pour): the routing round the header leaves
     # a top-pour sliver between pins 3 and 1 that hangs on pin 1 by one spoke; keep the pour out
-    k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetLayer(F)
-    o = k.Outline(); o.NewOutline()
-    for x, y in rect(139.6, 114.45, 140.95, 116.1): o.Append(MM(x), MM(y))
-    k.SetDoNotAllowTracks(False); k.SetDoNotAllowVias(False); k.SetDoNotAllowZoneFills(True)
-    k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName("no pour sliver at J2 pin 1"); b.Add(k)
-    # keep other nets' tracks out of the regulator heatsink copper (it would be cut in two)
-    rulearea("U1 heatsink: no other tracks", rect(156.1, 112.9, 163.4, 118.6))
-    # H1 slot: 0.5mm copper-free margin (the autorouter only keeps its 0.2mm clearance)
-    k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetLayerSet(pcbnew.LSET.AllCuMask())
-    o = k.Outline(); o.NewOutline()
-    for x, y in rect(160.267, 92.183, 173.967, 95.183): o.Append(MM(x), MM(y))
-    k.SetDoNotAllowTracks(True); k.SetDoNotAllowVias(True); k.SetDoNotAllowZoneFills(False)
-    k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName("H1 slot margin")
-    b.Add(k)
+    rulearea("no pour sliver at J2 pin 1", rect(139.6, 114.45, 140.95, 116.1), tracks=False, vias=False, fills=True, layer=F)
+    grp(0, 0)
     pcbnew.ZONE_FILLER(b).Fill(b.Zones())
     pcbnew.SaveBoard(sys.argv[3], b)
     pcbnew.ExportSpecctraDSN(b, sys.argv[4])
