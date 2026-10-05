@@ -4011,6 +4011,312 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 45.72 107.95)
@@ -4074,10 +4380,6 @@
 		(at 208.28 49.53)
 		(uuid "44517dd7-9ff7-4abd-b69f-3a558d444b4c")
 	)
-	(no_connect
-		(at 208.28 52.07)
-		(uuid "98443820-a7ad-4af1-85ab-d5edac1321ab")
-	)
 	(wire
 		(pts
 			(xy 95.25 26.67) (xy 95.25 24.13)
@@ -4087,16 +4389,6 @@
 			(type default)
 		)
 		(uuid "0100a5cc-a2b3-4c7f-bb18-ccde5e24dff5")
-	)
-	(wire
-		(pts
-			(xy 163.83 77.47) (xy 163.83 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0436d2c1-0c8c-4a0a-957d-ac9355bcf6fc")
 	)
 	(wire
 		(pts
@@ -4127,36 +4419,6 @@
 			(type default)
 		)
 		(uuid "0ec8e8d3-2502-4894-83c7-dc806306cf91")
-	)
-	(wire
-		(pts
-			(xy 157.48 59.69) (xy 168.91 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f719d08-5b11-4467-9d83-6f3fda5b15fb")
-	)
-	(wire
-		(pts
-			(xy 171.45 57.15) (xy 171.45 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12db1f3e-ac15-44c7-86b1-825e1be7a53c")
-	)
-	(wire
-		(pts
-			(xy 163.83 62.23) (xy 171.45 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1aa76d9a-349d-4826-b446-ec10aba891c2")
 	)
 	(wire
 		(pts
@@ -4210,26 +4472,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 59.69) (xy 173.99 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "290eaeb7-a4d7-404b-9781-860751a4f5e9")
-	)
-	(wire
-		(pts
-			(xy 157.48 77.47) (xy 157.48 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a3d5ffb-b701-40ae-9b83-89f80863a6f0")
-	)
-	(wire
-		(pts
 			(xy 158.75 52.07) (xy 187.96 52.07)
 		)
 		(stroke
@@ -4257,16 +4499,6 @@
 			(type default)
 		)
 		(uuid "324963c5-6ab8-423a-86e1-8ac1dcf139d1")
-	)
-	(wire
-		(pts
-			(xy 187.96 54.61) (xy 168.91 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34728b41-fb07-4011-91f0-414867a2ca72")
 	)
 	(wire
 		(pts
@@ -4420,26 +4652,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 54.61) (xy 168.91 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60dd828d-d1b7-47f4-a1db-c4be292478ac")
-	)
-	(wire
-		(pts
-			(xy 187.96 59.69) (xy 173.99 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "669ba24b-9694-4efe-84e5-0ecf406f4862")
-	)
-	(wire
-		(pts
 			(xy 48.26 97.79) (xy 40.64 97.79)
 		)
 		(stroke
@@ -4477,16 +4689,6 @@
 			(type default)
 		)
 		(uuid "7638b705-c4cb-40a9-9ee9-53d5da59278f")
-	)
-	(wire
-		(pts
-			(xy 157.48 67.31) (xy 157.48 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7883d63f-09a2-4f73-bdba-6c67238e39e9")
 	)
 	(wire
 		(pts
@@ -4580,16 +4782,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 67.31) (xy 170.18 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f661c21-e9a2-43f9-b2d9-83b685dda171")
-	)
-	(wire
-		(pts
 			(xy 17.78 102.87) (xy 17.78 88.9)
 		)
 		(stroke
@@ -4680,16 +4872,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 62.23) (xy 163.83 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb55c6b6-0962-4d7a-9c66-258e0068c031")
-	)
-	(wire
-		(pts
 			(xy 71.12 99.06) (xy 73.66 99.06)
 		)
 		(stroke
@@ -4707,16 +4889,6 @@
 			(type default)
 		)
 		(uuid "bccf947f-fd04-45dd-8aa9-3e3d9b538cf1")
-	)
-	(wire
-		(pts
-			(xy 170.18 77.47) (xy 170.18 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c019d4c6-5ce5-4a01-b588-9ad08e5e072c")
 	)
 	(wire
 		(pts
@@ -4747,16 +4919,6 @@
 			(type default)
 		)
 		(uuid "c89f9f3e-2e68-452d-a449-b285b8aa4129")
-	)
-	(wire
-		(pts
-			(xy 170.18 64.77) (xy 173.99 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8c44f56-ac6c-4136-81eb-5161eee535e6")
 	)
 	(wire
 		(pts
@@ -4900,16 +5062,6 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 57.15) (xy 171.45 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e634be03-ef3d-44fc-8760-4e0b53faf702")
-	)
-	(wire
-		(pts
 			(xy 110.49 34.29) (xy 105.41 34.29)
 		)
 		(stroke
@@ -4938,7 +5090,7 @@
 		)
 		(uuid "fe7c2b86-4b67-418c-a3dc-4d06dfffdfb9")
 	)
-	(label "IO7"
+	(label "IO1"
 		(at 87.63 152.4 180)
 		(effects
 			(font
@@ -5107,16 +5259,6 @@
 			(justify left bottom)
 		)
 		(uuid "4d329944-0f0a-42b7-b4dd-80769c7240c6")
-	)
-	(label "SIGNAL"
-		(at 157.48 85.09 90)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "53979964-0564-45a0-bfd7-ff7b4966ccfe")
 	)
 	(label "VCC"
 		(at 201.93 157.48 0)
@@ -5318,26 +5460,6 @@
 		)
 		(uuid "a9edaf60-1d0a-4731-8172-b124ab6613e7")
 	)
-	(label "DATA"
-		(at 163.83 85.09 90)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "aab02dae-44fb-495a-a94c-5fa4734a0718")
-	)
-	(label "HB"
-		(at 170.18 85.09 90)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "ae332da1-4a80-4bcf-a86a-a6d7b67135cd")
-	)
 	(label "IO8"
 		(at 142.24 143.51 180)
 		(effects
@@ -5427,16 +5549,6 @@
 			(justify left bottom)
 		)
 		(uuid "efd11a3a-7c2a-40c2-a072-0c92ed6c36e5")
-	)
-	(label "IO7"
-		(at 180.34 62.23 0)
-		(effects
-			(font
-				(size 1.2446 1.2446)
-			)
-			(justify left bottom)
-		)
-		(uuid "f34dd882-015d-454e-9adf-1a8af7ab6c35")
 	)
 	(label "GND"
 		(at 30.48 34.29 90)
@@ -5802,142 +5914,6 @@
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
-		(at 170.18 72.39 90)
-		(unit 1)
-		(body_style 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "09aa00d9-ec06-48f1-b8e8-ba905bc6b5ae")
-		(property "Reference" "R7"
-			(at 172.72 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0414 1.0414)
-				)
-				(justify right top)
-			)
-		)
-		(property "Value" "220Ω"
-			(at 172.72 74.93 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.2446 1.2446)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "heimdall-m-easyedapro:R0805"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "ERA6AEB221V"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "PANASONIC(松下)"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier Part" "C445647"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
-			(at 170.18 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0c993cab-fb39-4b6e-81e3-4c60a9085fa0")
-		)
-		(pin "1"
-			(uuid "6264b18e-3d14-4f44-9676-32b1c19276ec")
-		)
-		(instances
-			(project "heimdall-module"
-				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -7329,142 +7305,6 @@
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
-		(at 163.83 72.39 90)
-		(unit 1)
-		(body_style 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73aa92d4-9f7a-4902-ad78-0f3bf11aa113")
-		(property "Reference" "R6"
-			(at 166.37 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0414 1.0414)
-				)
-				(justify right top)
-			)
-		)
-		(property "Value" "220Ω"
-			(at 166.37 74.93 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.2446 1.2446)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "heimdall-m-easyedapro:R0805"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "ERA6AEB221V"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "PANASONIC(松下)"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier Part" "C445647"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
-			(at 163.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e4d1ce5b-a225-4c49-b69f-6ccb76ec44e7")
-		)
-		(pin "1"
-			(uuid "e9b1a6ea-9f9c-4956-a346-ae4dd7d36a80")
-		)
-		(instances
-			(project "heimdall-module"
-				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10018,142 +9858,6 @@
 		)
 	)
 	(symbol
-		(lib_id "heimdall-m-easyedapro:ERA6AEB221V")
-		(at 157.48 72.39 90)
-		(unit 1)
-		(body_style 0)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ec61e4b1-0acc-4a03-a209-2396f529c757")
-		(property "Reference" "R5"
-			(at 160.02 72.39 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.0414 1.0414)
-				)
-				(justify right top)
-			)
-		)
-		(property "Value" "220Ω"
-			(at 160.02 74.93 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.2446 1.2446)
-				)
-				(justify right top)
-			)
-		)
-		(property "Footprint" "heimdall-m-easyedapro:R0805"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/ERA6AEB221V/447234.html"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "ERA6AEB221V"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "PANASONIC(松下)"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier Part" "C445647"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "220Ω ±0.1% 125mW 薄膜电阻"
-			(at 157.48 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25d97843-ed76-46ff-b255-ea503f2082dd")
-		)
-		(pin "2"
-			(uuid "8346cb64-b929-4aac-a07d-6cbb999e65a3")
-		)
-		(instances
-			(project "heimdall-module"
-				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "heimdall-m-easyedapro:Ground-GND")
 		(at 114.3 26.67 90)
 		(unit 1)
@@ -10591,6 +10295,1195 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d9c3935-c7db-4c05-9f72-4004c92ea347")
+	)
+	(wire
+		(pts
+			(xy 187.96 54.61) (xy 180.34 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc76ffbc-5972-4e8b-95a0-af002745bb7d")
+	)
+	(label "PPM_IN"
+		(at 180.34 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a2f4bd2a-489c-474d-b6d1-c140d7df7dc5")
+	)
+	(wire
+		(pts
+			(xy 187.96 57.15) (xy 180.34 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c53351f9-a02a-488e-b163-3b7d48fbb7a1")
+	)
+	(label "DATA_RX"
+		(at 180.34 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92a8d641-d199-4333-b695-e932fcd36530")
+	)
+	(wire
+		(pts
+			(xy 187.96 59.69) (xy 180.34 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929e8272-ae89-4780-a862-a18739cb64a6")
+	)
+	(label "DATA_TX"
+		(at 180.34 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "07ae2803-3e1a-4050-84e5-2833a358a31e")
+	)
+	(label "HB_OUT"
+		(at 180.34 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3873bdad-be6d-4b86-b444-0a91cafadbc1")
+	)
+	(wire
+		(pts
+			(xy 208.28 52.07) (xy 213.36 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c252877-b13c-4ee3-839e-b2e2acf30832")
+	)
+	(label "IO1"
+		(at 213.36 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e071a6a5-1341-4aa1-b6a1-5d030f8c6c91")
+	)
+	(text "Bay interface: the radio can only pull a line low (Schottky); highs come from our 3V3 pull-ups"
+		(exclude_from_sim no)
+		(at 116.84 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "521c5401-7a98-44ef-b2d6-12845d09a51a")
+	)
+	(label "SIGNAL"
+		(at 121.92 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a8e03c9-603d-4292-8d86-eaa5b3afa10a")
+	)
+	(wire
+		(pts
+			(xy 121.92 101.6) (xy 125.73 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7055c8bd-7509-4705-b13a-e5b63aaa3932")
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 129.54 101.6 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "37298a3a-b573-468e-beeb-e934917523bd")
+		(property "Reference" "D3"
+			(at 129.54 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54WS"
+			(at 129.54 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BAT54WS-7-F"
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7008568d-b3b9-4e50-9a47-58b64ae73630")
+		)
+		(pin "2"
+			(uuid "6e441f99-1a4b-4129-947a-88b7c925b01d")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 133.35 101.6) (xy 139.7 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b409263e-196c-4ed9-9433-e9b90809698f")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 144.78 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35c498ae-f8a0-400f-afd4-6e44953ce234")
+	)
+	(label "PPM_IN"
+		(at 144.78 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "092d8814-b22b-4db4-bd19-6cd38a77946b")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 97.79 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a940aa13-d41d-48b0-8ff0-b7a2e61d5dc9")
+		(property "Reference" "R14"
+			(at 142.24 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 142.24 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 139.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJ-6ENF4701V"
+			(at 139.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 139.7 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c4cd0fa9-bb9e-48a3-9c24-d26540e6d40b")
+		)
+		(pin "2"
+			(uuid "59defeac-8e86-4b64-8f48-5994a47d7dbe")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VCC"
+		(at 139.7 93.98 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6edae5f-0919-4ac1-9118-2ed935ec6591")
+	)
+	(junction
+		(at 139.7 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b3d41d8-eb5f-4613-89ac-3b4038060a02")
+	)
+	(label "DATA"
+		(at 121.92 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "863e27b0-4f92-458f-a211-fffed35a9b64")
+	)
+	(wire
+		(pts
+			(xy 121.92 111.76) (xy 124.46 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27d1fd9-ab3a-41e0-b0b9-bdf0374fe58a")
+	)
+	(wire
+		(pts
+			(xy 124.46 111.76) (xy 127 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90a6c422-e29e-4b72-9152-9129408dcae2")
+	)
+	(wire
+		(pts
+			(xy 127 111.76) (xy 128.27 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c860ece-c2b5-4c97-9dfc-2391d8dac4da")
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 132.08 111.76 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bd6c79a7-6bcb-494d-b963-f2b022542903")
+		(property "Reference" "D4"
+			(at 132.08 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54WS"
+			(at 132.08 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BAT54WS-7-F"
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 132.08 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c2984d5-7953-414a-9df8-3f5b839dc0d8")
+		)
+		(pin "2"
+			(uuid "2cf32d2e-5556-43f4-814d-c3dc22e4d1dd")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 135.89 111.76) (xy 139.7 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59d743e0-6535-40d4-9220-4a35890d08de")
+	)
+	(wire
+		(pts
+			(xy 139.7 111.76) (xy 144.78 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c61b19bc-abbf-4604-b4d4-0f600624e060")
+	)
+	(label "DATA_RX"
+		(at 144.78 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c34d22fb-5edf-42ac-bfcc-7e6a767229e3")
+	)
+	(junction
+		(at 127 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "581862b9-4208-4cc8-abeb-46c9bebc4f4a")
+	)
+	(wire
+		(pts
+			(xy 127 111.76) (xy 127 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47facb4-0488-4c81-b3fd-570ce5d12141")
+	)
+	(wire
+		(pts
+			(xy 127 119.38) (xy 128.27 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1632bfb-fab2-43b2-a16e-6a55cd2bee20")
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 132.08 119.38 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "31c17485-2d6e-4ffc-ba7c-fc5031238fbb")
+		(property "Reference" "D5"
+			(at 132.08 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54WS"
+			(at 132.08 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 132.08 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BAT54WS-7-F"
+			(at 132.08 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 132.08 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb9aff37-c55c-4af1-a81d-be6b2e8f84c8")
+		)
+		(pin "2"
+			(uuid "9fca2de8-cdcb-4e3b-81c1-4316cfc235f3")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 135.89 119.38) (xy 144.78 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d7b5243-e726-4600-bb8a-27ac9d8ef74c")
+	)
+	(label "DATA_TX"
+		(at 144.78 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf8b8a1d-18cb-44bf-a616-8974d8134296")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 107.95 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be4d00e1-c72a-40c9-aee0-1b1045a91f7e")
+		(property "Reference" "R17"
+			(at 127 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.5kΩ"
+			(at 127 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 124.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJ-6ENF1501V"
+			(at 124.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 124.46 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9e1fe14-8f0e-40f6-bed3-571ce0ed2211")
+		)
+		(pin "2"
+			(uuid "5b86e44a-c54d-47c0-8a18-5ba636c7b6fb")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VCC"
+		(at 124.46 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9243667d-aea1-4186-a384-d49c11f147ac")
+	)
+	(junction
+		(at 124.46 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0448ce4a-3019-4c89-a5bc-1524be539afd")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 139.7 107.95 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ab4077ef-1303-4bfb-a1f3-a35cfe8c9069")
+		(property "Reference" "R16"
+			(at 142.24 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 142.24 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 139.7 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJ-6ENF4701V"
+			(at 139.7 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 139.7 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c1eb766-b892-4826-b5f1-7a47dd2ae37d")
+		)
+		(pin "2"
+			(uuid "d7e0a02e-0b29-4133-957f-de2c458a520d")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VCC"
+		(at 139.7 104.14 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d2bda448-3e37-411d-a63e-346876f0f019")
+	)
+	(junction
+		(at 139.7 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e3fd838-a866-4097-836d-d12b8bd8c5ad")
+	)
+	(label "HB"
+		(at 121.92 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "db35eea8-e7db-4e05-bab3-100b090b723e")
+	)
+	(wire
+		(pts
+			(xy 121.92 129.54) (xy 124.46 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ac77c2-b016-45e8-add0-b3f71810587d")
+	)
+	(wire
+		(pts
+			(xy 124.46 129.54) (xy 128.27 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e082b99-9872-4c43-824d-5952e262c535")
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 132.08 129.54 180)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c4f1d293-d103-4bb1-af35-43aa75d9d6e3")
+		(property "Reference" "D6"
+			(at 132.08 125.73 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BAT54WS"
+			(at 132.08 133.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BAT54WS-7-F"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98a81dcc-28cc-4edb-920d-aa8bc35d315c")
+		)
+		(pin "2"
+			(uuid "d715a475-4b79-44a0-bce7-c5dc39ec33da")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 135.89 129.54) (xy 144.78 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c70e00f-6232-4667-abc4-a5c01542f89b")
+	)
+	(label "HB_OUT"
+		(at 144.78 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6347291a-608f-4d95-b8af-5cbe5b78a5a9")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 124.46 125.73 0)
+		(unit 1)
+		(body_style 0)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4f68f98-71f1-4ee1-bba2-9fda31970fc3")
+		(property "Reference" "R15"
+			(at 127 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 127 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "heimdall-m-easyedapro:R0805"
+			(at 124.46 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ERJ-6ENF4701V"
+			(at 124.46 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 124.46 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11a40c79-62bf-408a-ac71-70511139a6e7")
+		)
+		(pin "2"
+			(uuid "9a610b61-3b3b-47e3-ade0-fe175e017fa8")
+		)
+		(instances
+			(project "heimdall-module"
+				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(label "VCC"
+		(at 124.46 121.92 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afaf627c-6e67-4502-8e67-a48a1dea0ba9")
+	)
+	(junction
+		(at 124.46 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a3b62cd-aa39-4582-b76c-25d7877aab99")
 	)
 	(sheet_instances
 		(path "/"

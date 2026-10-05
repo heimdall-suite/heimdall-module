@@ -120,23 +120,24 @@ if sys.argv[1] == "prep":
     track(b, "/VBAT_IN", F, 162.0, 100.25, 164.09, 101.9, 0.6)
     # SIGNAL (H1 pin 1) and DATA (H1 pin 5) both start in the strip between board edge and slot.
     # They cross the board on the bottom side by side just under the antenna cut-out (SIGNAL at
-    # y=98.03, 0.5mm from the cut-out, DATA at 98.48) to R5 (SIGNAL) and R6 (DATA)
+    # y=98.03, 0.5mm from the cut-out, DATA at 98.48) to the bay interface diodes left of the module
     track(b, "/SIGNAL", F, 162.037, 91.575, 158.4, 91.575, 0.25)
     track(b, "/SIGNAL", F, 158.4, 91.575, 158.4, 96.6, 0.25)
     track(b, "/SIGNAL", F, 158.4, 96.6, 156.6, 97.2, 0.25)
     via(b, "/SIGNAL", 156.6, 97.2, 0.7, 0.3)
-    for (x0, y0, x1, y1) in ((156.6, 97.2, 156.6, 98.03), (156.6, 98.03, 128.6, 98.03),
-                             (128.6, 98.03, 126.75, 99.88), (126.75, 99.88, 126.75, 101.73)):
+    for (x0, y0, x1, y1) in ((156.6, 97.2, 156.6, 98.03), (156.6, 98.03, 125.4, 98.03), (125.4, 98.03, 125.4, 101.9)):
         track(b, "/SIGNAL", B, x0, y0, x1, y1, 0.25)
-    via(b, "/SIGNAL", 126.75, 101.73, 0.7, 0.3)
-    track(b, "/SIGNAL", F, 126.75, 101.73, 126.747, 103.462, 0.25)
+    via(b, "/SIGNAL", 125.4, 101.9, 0.7, 0.3)
+    track(b, "/SIGNAL", F, 125.4, 101.9, 126.65, 101.9, 0.25)          # D3 cathode
     track(b, "/DATA", F, 172.197, 91.575, 169.9, 91.45, 0.25)
     via(b, "/DATA", 169.9, 91.45, 0.7, 0.3)
     for (x0, y0, x1, y1) in ((169.9, 91.45, 169.23, 90.78), (169.23, 90.78, 159.2, 90.78), (159.2, 90.78, 159.2, 98.48),
-                             (159.2, 98.48, 133.0, 98.48), (133.0, 98.48, 133.0, 103.0)):
+                             (159.2, 98.48, 126.3, 98.48), (126.3, 98.48, 126.3, 104.27), (126.3, 104.27, 125.6, 104.97)):
         track(b, "/DATA", B, x0, y0, x1, y1, 0.25)
-    via(b, "/DATA", 133.0, 103.0, 0.7, 0.3)
-    track(b, "/DATA", F, 133.0, 103.0, 130.823, 104.976, 0.25)
+    via(b, "/DATA", 125.6, 104.97, 0.7, 0.3)
+    track(b, "/DATA", F, 125.6, 104.97, 124.1, 104.97, 0.25)           # R17 (1.5k pull-up)
+    track(b, "/DATA", F, 125.6, 104.97, 126.65, 103.95, 0.25)          # D4 cathode (RX)
+    track(b, "/DATA", F, 125.6, 104.97, 126.65, 106.0, 0.25)           # D5 anode (TX)
     # 3V3 trunk (Espressif: >= 20 mil for VDD3P3): U1 tab heatsink -> bottom, up along the module's
     # right edge, left under the antenna end of the module, up next to module pin 1 (an L, so the
     # bottom under the module stays free for the right-hand pins); short top branch to C3
@@ -153,6 +154,10 @@ if sys.argv[1] == "prep":
     track(b, "/VCC", B, 134.6, 109.2, 133.8, 110.0, 0.3)
     via(b, "/VCC", 133.8, 110.0, 0.7, 0.3)   # below the module's IO8/IO9 escapes
     track(b, "/VCC", F, 133.8, 110.0, 132.4, 109.6, 0.3)
+    # R14/R16 (MCU-side bay pull-ups): VCC pad straight onto that bottom track
+    for y in (101.9, 103.95):
+        track(b, "/VCC", F, 133.4, y, 134.6, y, 0.3)
+        via(b, "/VCC", 134.6, y, 0.7, 0.3)
     # R11 (IO2 pull-up, VCC pad at the bottom): via below it, down on the bottom into the heatsink
     track(b, "/VCC", F, 157.0, 102.0, 157.0, 103.5, 0.3)
     via(b, "/VCC", 157.0, 103.5, 0.7, 0.3)
@@ -179,7 +184,7 @@ if sys.argv[1] == "prep":
     # H1 slot: 0.5mm copper-free margin (the autorouter only keeps its 0.2mm clearance)
     k = pcbnew.ZONE(b); k.SetIsRuleArea(True); k.SetLayerSet(pcbnew.LSET.AllCuMask())
     o = k.Outline(); o.NewOutline()
-    for x, y in rect(160.267, 92.167, 173.967, 95.199): o.Append(MM(x), MM(y))
+    for x, y in rect(160.267, 92.183, 173.967, 95.183): o.Append(MM(x), MM(y))
     k.SetDoNotAllowTracks(True); k.SetDoNotAllowVias(True); k.SetDoNotAllowZoneFills(False)
     k.SetDoNotAllowPads(False); k.SetDoNotAllowFootprints(False); k.SetZoneName("H1 slot margin")
     b.Add(k)
