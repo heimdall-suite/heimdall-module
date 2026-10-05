@@ -16,9 +16,12 @@ The board is shaped for the 3D-printed case `MULTI-Module_Bangood_4-in-1_Case.st
 - The outline is the case cavity (57 x 41.5 mm) minus 0.3 mm all round. It has
   notches for the two latch housings, which reach 4 mm in from the long walls.
   The top notch merges with the cut-out under the ESP32 module's antenna.
-- MH1-MH3 are M2 holes on the case's three standoffs. The board sits 2 mm above
-  the case floor, so through-hole pins (J2, the USB-C mounting legs) have to be
-  cut flush. The copper keeps 2 mm clear of each hole for the screw head.
+- MH1-MH3 are 3.2 mm holes for M3 screws on the case's three standoffs. The STL's
+  standoffs are drilled for M2 (1.8 mm), so the case needs larger bosses and
+  M3 pilot holes. The copper keeps 3 mm clear of each hole, enough for a
+  cheese or socket head up to 5.5 mm.
+- The board sits 2 mm above the case floor, so through-hole pins (J2, the
+  USB-C mounting legs) have to be cut flush.
 - The bay pins come up through the floor opening and the H1 slot into the
   female header on top.
 - **H1 position:** taken from three existing JR-bay designs. All three put the

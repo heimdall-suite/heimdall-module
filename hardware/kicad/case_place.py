@@ -1,5 +1,5 @@
 """Fit the board to MULTI-Module_Bangood_4-in-1_Case: outline = cavity - 0.3mm, latch notches,
-M2 holes on the case standoffs, groups moved clear. Strips copper (routing is redone)."""
+M3 holes on the case standoffs, groups moved clear. Strips copper (routing is redone)."""
 import pcbnew, sys
 B = sys.argv[1]
 MM = pcbnew.FromMM; T = pcbnew.ToMM
@@ -18,14 +18,14 @@ OUT = [(119.42, 89.48), (136.7, 89.48), (136.7, 100.1), (154.7, 100.1), (154.7, 
 for i in range(len(OUT)):
     g = pcbnew.PCB_SHAPE(b, pcbnew.SHAPE_T_SEGMENT); g.SetLayer(pcbnew.Edge_Cuts); g.SetWidth(MM(0.05))
     g.SetStart(V(*OUT[i])); g.SetEnd(V(*OUT[(i + 1) % len(OUT)])); b.Add(g)
-# mounting holes on the case standoffs
+# mounting holes (M3, 3.2mm, cheese/socket head up to 5.5mm) on the case standoffs
 for f in list(b.GetFootprints()):
     if f.GetReference() in ('MH1', 'MH2'): dead.append(f)
 IO = pcbnew.PCB_IO_KICAD_SEXPR()
 for i, (x, y) in enumerate(((126.42, 91.73), (172.02, 101.63), (157.92, 123.83))):
-    f = IO.FootprintLoad(r'C:/Users/svefre/AppData/Local/Programs/KiCad/10.0/share/kicad/footprints/MountingHole.pretty', 'MountingHole_2.2mm_M2')
-    f.SetFPID(pcbnew.LIB_ID('MountingHole', 'MountingHole_2.2mm_M2'))
-    f.SetReference('MH%d' % (i + 1)); f.Reference().SetVisible(False); f.SetValue('M2')
+    f = IO.FootprintLoad(r'C:/Users/svefre/AppData/Local/Programs/KiCad/10.0/share/kicad/footprints/MountingHole.pretty', 'MountingHole_3.2mm_M3_ISO14580')
+    f.SetFPID(pcbnew.LIB_ID('MountingHole', 'MountingHole_3.2mm_M3_ISO14580'))
+    f.SetReference('MH%d' % (i + 1)); f.Reference().SetVisible(False); f.SetValue('M3')
     f.SetBoardOnly(True); f.SetExcludedFromBOM(True); f.SetExcludedFromPosFiles(True)
     f.SetPosition(V(x, y)); b.Add(f)
 # groups
@@ -34,9 +34,9 @@ for f in b.GetFootprints():
     r = f.GetReference()
     if not r or r.startswith('MH') or r == 'H1': continue
     p = f.GetPosition()
-    if r in RIGHT: dx, dy = 0, 3.7
-    elif r == 'U1': dx, dy = 4.1, 3.7
-    elif r == 'R1': f.SetPosition(V(171.8, 97.9)); f.SetOrientationDegrees(0); continue
+    if r in RIGHT: dx, dy = 0, 4.0
+    elif r == 'U1': dx, dy = 4.6, 3.7
+    elif r == 'R1': f.SetPosition(V(167.0, 98.0)); f.SetOrientationDegrees(180); continue
     elif r == 'R2': f.SetPosition(V(174.6, 118.0)); f.SetOrientationDegrees(90); continue
     else: dx, dy = 0, 2.8
     f.SetPosition(pcbnew.VECTOR2I(p.x + MM(dx), p.y + MM(dy)))
@@ -55,7 +55,6 @@ for d in b.GetDrawings():
         bb = d.GetBoundingBox()
         if T(bb.GetLeft()) > 160.6 and T(bb.GetRight()) < 173.6 and T(bb.GetTop()) > 92.5 and T(bb.GetBottom()) < 94.9:
             d.Move(V(DX, DY))
-b.FindFootprintByReference('R1').SetPosition(V(171.8, 98.0))
 pcbnew.SaveBoard(B, b)
 
 # ---- C2 (U1's output cap) beside the tab, clear of the M2 hole

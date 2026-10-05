@@ -64,8 +64,8 @@ if sys.argv[1] == "prep":
     # Board fitted to MULTI-Module_Bangood_4-in-1_Case (see case_place in the commit log): the hand
     # routes are drawn per placement group with that group's offset from the rev 2 layout
     #   L (module, left side, J2):            +0.0, +2.8
-    #   R (USB-C, ESD, D1/D2, R3/R4, C1):     +0.0, +3.7
-    #   U1 (regulator):                       +4.1, +3.7
+    #   R (USB-C, ESD, D1/D2, R3/R4, C1):     +0.0, +4.0
+    #   U1 (regulator):                       +4.6, +3.7
     #   H1 (bay header + slot):               +1.25, +0.25
     # Routes that cross groups are drawn in absolute coordinates (offset 0).
     b = pcbnew.LoadBoard(sys.argv[2])
@@ -85,14 +85,14 @@ if sys.argv[1] == "prep":
     # VCC copper on both layers around the tab, joined by vias beside the pad (never in it).
     # The bottom copper reaches further left so the 3V3 trunk and R11's feed can land in it.
     grp(0, 0)
-    zone(b, "/VCC", F, rect(159.1, 116.0, 167.5, 122.3), 10, name="U1 tab heatsink (top)")
-    zone(b, "/VCC", B, rect(155.2, 116.0, 167.5, 122.3), 10, name="U1 tab heatsink (bottom)")
-    for x, y in ((159.7, 116.7), (159.7, 118.1), (159.7, 119.5), (159.7, 120.9)):
+    zone(b, "/VCC", F, rect(159.1, 116.0, 168.0, 122.3), 10, name="U1 tab heatsink (top)")
+    zone(b, "/VCC", B, rect(155.2, 116.0, 168.0, 122.3), 10, name="U1 tab heatsink (bottom)")
+    for x, y in ((159.7, 116.7), (159.7, 118.1), (159.7, 119.5)):
         via(b, "/VCC", x, y)
     track(b, "/VCC", F, 158.0, 119.7, 159.7, 119.5, 0.6)      # C2 (output cap) onto the tab copper
-    rulearea("U1 heatsink: no other tracks", rect(160.2, 116.6, 167.5, 122.3))
+    rulearea("U1 heatsink: no other tracks", rect(160.2, 116.6, 168.0, 122.3))
     # and none across the bottom copper's left part either (the trunk and R11 land there)
-    rulearea("U1 heatsink bottom: no other tracks", rect(155.2, 116.6, 160.2, 122.3), layer=B)
+    rulearea("U1 heatsink bottom: no other tracks", rect(155.8, 116.6, 160.2, 122.3), layer=B)
 
     # ------------------------------------------------------------------ L group
     grp(0, 2.8)
@@ -100,7 +100,7 @@ if sys.argv[1] == "prep":
     rulearea("U2 underside: GND only", rect(138.3, 97.6, 152.0, 111.0), tracks=True, vias=True, layer=F)
 
     # ------------------------------------------------------------------ R group
-    grp(0, 3.7)
+    grp(0, 4.0)
     # U3 (vertical USB-C): rows A (x=169.59) and B (x=170.99) leave a 0.7mm channel at x=170.29;
     # everything that has to pass between the rows is laid here by hand (y below: rev 2 values)
     A, Bx, C = 169.592, 170.992, 170.292
@@ -108,8 +108,6 @@ if sys.argv[1] == "prep":
     # x=167.4 joining them to D1's anode and U4's VBUS pin
     track(b, "/VBUS", F, A, 103.448, Bx, 103.448, 0.6)     # A9-B4
     track(b, "/VBUS", F, C, 103.448, C, 101.6, 0.3)        # out between A12/B1
-    track(b, "/VBUS", F, C, 101.6, C, 100.0, 0.6)
-    track(b, "/VBUS", F, C, 100.0, 167.4, 100.0, 0.6)
     track(b, "/VBUS", F, A, 108.048, Bx, 108.048, 0.6)     # A4-B9
     track(b, "/VBUS", F, C, 108.048, C, 109.6, 0.3)        # out between A1/B12
     track(b, "/VBUS", F, C, 109.6, C, 110.1, 0.6)
@@ -151,24 +149,27 @@ if sys.argv[1] == "prep":
 
     # ------------------------------------------------------------------ absolute: R1/R2 ends
     grp(0, 0)
-    # CC2: from the channel (C, 105.0) left of the M2 hole up to R1 beside H1
-    for (x0, y0, x1, y1) in ((C, 105.0, 168.9, 103.6), (168.9, 103.6, 168.9, 98.6), (168.9, 98.6, 169.3, 98.2)):
+    # VBUS out of the channel between A12/B1 and left to the rail, clear of the M3 hole
+    track(b, "/VBUS", F, C, 105.6, 168.99, 104.3, 0.6)
+    track(b, "/VBUS", F, 168.99, 104.3, 167.4, 104.3, 0.6)
+    # CC2: from the channel (C, 105.3) round the M3 hole up to R1 left of H1's pin 4
+    for (x0, y0, x1, y1) in ((C, 105.3, 168.4, 103.9), (168.4, 103.9, 168.4, 99.3)):
         track(b, "Net-(U3-CC2)", B, x0, y0, x1, y1, 0.25)
-    via(b, "Net-(U3-CC2)", 169.3, 98.2, 0.7, 0.3)
-    track(b, "Net-(U3-CC2)", F, 169.3, 98.2, 170.8, 98.0, 0.25)
+    via(b, "Net-(U3-CC2)", 168.4, 99.3, 0.7, 0.3)
+    track(b, "Net-(U3-CC2)", F, 168.4, 99.3, 168.0, 98.0, 0.25)
     # CC1: via right of the connector, on top down to R2 at the right edge
-    track(b, "Net-(U3-CC1)", F, 173.3, 115.1, 174.6, 116.4, 0.25)
-    track(b, "Net-(U3-CC1)", F, 174.6, 116.4, 174.6, 117.0, 0.25)
+    track(b, "Net-(U3-CC1)", F, 173.3, 115.4, 174.6, 116.7, 0.25)
+    track(b, "Net-(U3-CC1)", F, 174.6, 116.7, 174.6, 117.0, 0.25)
 
     # ------------------------------------------------------------------ absolute: bay lines from H1
     # H1 pins 1/3/5 sit in the strip between the board edge and the slot, pins 2/4 below the slot.
     # VBAT_IN: via beside pin 3, round the slot's left end on the bottom, up between D1 and D2
     track(b, "/VBAT_IN", F, 168.367, 91.825, 166.05, 91.8, 0.6)
     via(b, "/VBAT_IN", 166.05, 91.8)
-    for (x0, y0, x1, y1) in ((166.05, 91.8, 160.6, 91.8), (160.6, 91.8, 160.6, 103.95), (160.6, 103.95, 161.9, 103.95)):
+    for (x0, y0, x1, y1) in ((166.05, 91.8, 160.6, 91.8), (160.6, 91.8, 160.6, 104.25), (160.6, 104.25, 161.9, 104.25)):
         track(b, "/VBAT_IN", B, x0, y0, x1, y1, 0.6)
-    via(b, "/VBAT_IN", 161.9, 103.95)
-    track(b, "/VBAT_IN", F, 161.9, 103.95, 164.093, 105.6, 0.6)
+    via(b, "/VBAT_IN", 161.9, 104.25)
+    track(b, "/VBAT_IN", F, 161.9, 104.25, 164.093, 105.9, 0.6)
     # SIGNAL: on top past the latch notch, via beside the antenna cut-out, then the L-group bottom run
     for (x0, y0, x1, y1) in ((163.287, 91.825, 159.0, 91.825), (159.0, 91.825, 159.0, 99.4), (159.0, 99.4, 156.6, 100.0)):
         track(b, "/SIGNAL", F, x0, y0, x1, y1, 0.25)
@@ -182,26 +183,30 @@ if sys.argv[1] == "prep":
     track(b, "/HB", F, 165.827, 96.041, 164.75, 96.04, 0.25)
     via(b, "/HB", 164.75, 96.04, 0.7, 0.3)
     track(b, "/HB", B, 164.75, 96.04, 162.7, 98.09, 0.25)
-    track(b, "/HB", B, 162.7, 98.09, 162.7, 115.35, 0.25)
-    via(b, "/HB", 162.7, 115.35, 0.7, 0.3)
-    track(b, "/HB", F, 162.7, 115.35, 134.95, 115.35, 0.25)
-    track(b, "/HB", F, 134.95, 115.35, 134.1, 116.14, 0.25)
+    track(b, "/HB", B, 162.7, 98.09, 162.7, 115.55, 0.25)
+    via(b, "/HB", 162.7, 115.55, 0.7, 0.3)
+    track(b, "/HB", F, 162.7, 115.55, 135.15, 115.55, 0.25)
+    track(b, "/HB", F, 135.15, 115.55, 134.1, 116.14, 0.25)
     # 3V3 trunk start: from the bottom heatsink copper up the module's right edge (the rest is L)
     track(b, "/VCC", B, 155.6, 116.4, 155.6, 102.2, 0.5)
+    # I2C pull-ups R9/R10 (by J2): VCC pads joined, via, on the bottom into the heatsink copper
+    track(b, "/VCC", F, 147.559, 120.978, 150.099, 120.978, 0.3)
+    track(b, "/VCC", F, 150.099, 120.978, 151.5, 120.978, 0.3)
+    via(b, "/VCC", 151.5, 120.978, 0.7, 0.3)
+    track(b, "/VCC", B, 151.5, 120.978, 155.6, 120.978, 0.3)
     # R11's feed down into the bottom heatsink copper
     track(b, "/VCC", B, 157.0, 115.4, 157.0, 116.4, 0.3)
     # GND spine: module pad 9 along the strip under the pad row to C1's GND pad keeps the pours joined
-    track(b, "GND", F, 136.904, 113.278, 137.88, 114.65, 0.4)
-    track(b, "GND", F, 137.88, 114.65, 160.8, 114.65, 0.4)
-    track(b, "GND", F, 160.8, 114.65, 161.8, 113.5, 0.4)
-    # copper-free around the M2 holes (screw head ~3.8mm on top, standoff on the bottom)
+    track(b, "GND", F, 136.904, 113.278, 137.88, 114.9, 0.4)
+    track(b, "GND", F, 137.88, 114.9, 160.8, 114.9, 0.4)
+    track(b, "GND", F, 160.8, 114.9, 161.8, 113.8, 0.4)
+    # copper-free around the M3 holes (cheese/socket head up to 5.5mm on top, standoff on the bottom)
     import math
     for i, (cx, cy) in enumerate(((126.42, 91.73), (172.02, 101.63), (157.92, 123.83))):
-        rulearea("M2 hole %d keepout" % (i + 1), [(cx + 2.0 * math.cos(k * math.pi / 8), cy + 2.0 * math.sin(k * math.pi / 8)) for k in range(16)],
+        rulearea("M3 hole %d keepout" % (i + 1), [(cx + 3.0 * math.cos(k * math.pi / 8), cy + 3.0 * math.sin(k * math.pi / 8)) for k in range(16)],
                  fills=True)
-    # H1 pin 4 (GND) is boxed in below the slot: via beside it, shared with R1's GND pad
+    # H1 pin 4 (GND) is boxed in below the slot: via beside it
     track(b, "GND", F, 170.907, 96.041, 172.4, 96.45, 0.3)
-    track(b, "GND", F, 172.8, 98.0, 172.4, 96.45, 0.3)
     via(b, "GND", 172.4, 96.45, 0.6, 0.3)
     # no pour in the strip above the slot (bay pins 1/3/5 only; a GND fill there is an island)
     rulearea("no pour: strip above the H1 slot", rect(158.6, 89.0, 176.5, 92.45), tracks=False, vias=False, fills=True)
