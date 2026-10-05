@@ -8,6 +8,16 @@ Hardware rev 2 (KiCad 10, `hardware/kicad/`): schematic reviewed and corrected,
 board re-placed and re-routed from the first EasyEDA layout. Not built or tested
 yet. The EasyEDA originals are kept in `hardware/easyeda-archive/`. No firmware yet.
 
+KiCad 3D renders of rev 2:
+
+| Top, angled | Bottom, angled |
+|---|---|
+| ![Board, 3D top, angled](hardware/kicad/render-angled-top.png) | ![Board, 3D bottom, angled](hardware/kicad/render-angled-bottom.png) |
+
+| Top | Bottom (mirrored, as seen from below) |
+|---|---|
+| ![Board, 3D top](hardware/kicad/render-top.png) | ![Board, 3D bottom](hardware/kicad/render-bottom.png) |
+
 ## Case
 
 The board is shaped for the 3D-printed case `MULTI-Module_Bangood_4-in-1_Case.stl`
@@ -20,8 +30,6 @@ The board is shaped for the 3D-printed case `MULTI-Module_Bangood_4-in-1_Case.st
   standoffs are drilled for M2 (1.8 mm), so the case needs larger bosses and
   M3 pilot holes. The copper keeps 3 mm clear of each hole, enough for a
   cheese or socket head up to 5.5 mm.
-- The board sits 2 mm above the case floor, so through-hole pins (J2, the
-  USB-C mounting legs) have to be cut flush.
 - The bay pins come up through the floor opening and the H1 slot into the
   female header on top.
 - **H1 position:** taken from three existing JR-bay designs. All three put the
