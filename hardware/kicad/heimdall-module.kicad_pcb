@@ -13393,8 +13393,8 @@
 		(uuid "7e59dc81-54e1-41c1-a426-7af3b4522bfc")
 	)
 	(gr_line
-		(start 162.017 94.308)
-		(end 162.017 93.558)
+		(start 162.017 94.298)
+		(end 162.017 93.568)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -13445,8 +13445,8 @@
 		(uuid "3e3ce508-0f9f-4c99-b706-648e8ac7a0af")
 	)
 	(gr_line
-		(start 174.717 93.558)
-		(end 174.717 94.308)
+		(start 174.717 93.568)
+		(end 174.717 94.298)
 		(stroke
 			(width 0.05)
 			(type default)
