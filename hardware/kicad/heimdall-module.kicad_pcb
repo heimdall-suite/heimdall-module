@@ -12254,7 +12254,7 @@
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/EASYEDA_MODELS/HDR-SMD_5P-P2.54-V-F-LS4.4.step"
 			(offset
-				(xyz -6.6 -0.9 0)
+				(xyz -6.6 -0.9 0.44)
 			)
 			(scale
 				(xyz 1 1 1)
