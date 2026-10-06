@@ -6984,7 +6984,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "47db6c51-065f-4778-baad-b1c03c685b05")
-		(property "Reference" "R12"
+		(property "Reference" "R9"
 			(at 147.32 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7090,7 +7090,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R12")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7320,7 +7320,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f6d6687-45cd-4c05-9b65-47dc8c2f0ff9")
-		(property "Reference" "R11"
+		(property "Reference" "R8"
 			(at 196.85 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7426,7 +7426,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R11")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -8151,7 +8151,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8d0178ac-f763-4b12-9ddb-6a412efa3db2")
-		(property "Reference" "R10"
+		(property "Reference" "R7"
 			(at 231.14 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8270,7 +8270,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R10")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -9371,7 +9371,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af817895-3511-4e1b-966e-b78f70883ee9")
-		(property "Reference" "J2"
+		(property "Reference" "J1"
 			(at 93.98 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9451,7 +9451,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -9624,7 +9624,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca8ccef4-27f7-474b-9bf4-3ae4d7d94686")
-		(property "Reference" "R9"
+		(property "Reference" "R6"
 			(at 223.52 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9743,7 +9743,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R9")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -10289,7 +10289,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f8dd1c94-195e-48ae-ad9b-b6d77bb52340")
-		(property "Reference" "R8"
+		(property "Reference" "R5"
 			(at 161.29 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10408,7 +10408,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R8")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -10425,7 +10425,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f90a1132-d960-468c-90a8-23884aaceabd")
-		(property "Reference" "R13"
+		(property "Reference" "R10"
 			(at 172.72 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10531,7 +10531,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R13")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -10883,7 +10883,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a940aa13-d41d-48b0-8ff0-b7a2e61d5dc9")
-		(property "Reference" "R14"
+		(property "Reference" "R11"
 			(at 142.24 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10967,7 +10967,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R14")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -11217,7 +11217,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab4077ef-1303-4bfb-a1f3-a35cfe8c9069")
-		(property "Reference" "R16"
+		(property "Reference" "R13"
 			(at 142.24 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11301,7 +11301,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R16")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -11364,7 +11364,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c4f1d293-d103-4bb1-af35-43aa75d9d6e3")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 132.08 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11448,7 +11448,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "D6")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -11485,7 +11485,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d4f68f98-71f1-4ee1-bba2-9fda31970fc3")
-		(property "Reference" "R15"
+		(property "Reference" "R12"
 			(at 127 124.46 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11569,7 +11569,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R15")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11602,7 +11602,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fc27b4fc-8902-4ef4-9acd-537e4ad8aa6b")
-		(property "Reference" "R17"
+		(property "Reference" "R14"
 			(at 132.08 116.84 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11688,7 +11688,7 @@
 		(instances
 			(project "heimdall-module"
 				(path "/086f1e9c-4772-4202-855e-19c4ce2126c1"
-					(reference "R17")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -12113,7 +12113,7 @@
 			)
 		)
 	)
-	(text "DATA transmit: U5 (5V-tolerant, always on) drives the bay line through R17 1k. The UART idle level"
+	(text "DATA transmit: U5 (5V-tolerant, always on) drives the bay line through R14 1k. The UART idle level"
 		(exclude_from_sim no)
 		(at 210.82 83.82 0)
 		(effects
